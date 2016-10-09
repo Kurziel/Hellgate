@@ -96,8 +96,8 @@ There is a console command: forcegamestage
 	
 	<spawner name="BloodMoonHorde">
 		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  start: auto generated horde stages  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-		<gamestage stage="1"><spawn group="hordeStageGS1" num="1" maxalive="1" duration="1"/><spawn group="ZombiesNight" num="1" maxAlive="1"/></gamestage>
-		<gamestage stage="2"><spawn group="hordeStageGS2" num="2" maxalive="1" duration="1"/><spawn group="ZombiesNight" num="2" maxAlive="1"/></gamestage>
+		<gamestage stage="1"><spawn group="SnowZombies" num="0" maxAlive="0" duration="1"/></gamestage>
+		<!-- <gamestage stage="2"><spawn group="hordeStageGS2" num="2" maxalive="1" duration="1"/><spawn group="ZombiesNight" num="2" maxAlive="1"/></gamestage>
 		<gamestage stage="4"><spawn group="hordeStageGS4" num="4" maxalive="2" duration="1"/><spawn group="ZombiesNight" num="4" maxAlive="1"/></gamestage>
 		<gamestage stage="6"><spawn group="hordeStageGS4" num="6" maxalive="3" duration="1"/><spawn group="hordeStageGS6" num="6" maxalive="3" duration="1"/><spawn group="ZombiesNight" num="6" maxAlive="1"/></gamestage>
 		<gamestage stage="9"><spawn group="hordeStageGS6" num="9" maxalive="5" duration="1" interval="15"/><spawn group="hordeStageGS9" num="9" maxalive="5" duration="1"/><spawn group="ZombiesNight" num="9" maxAlive="1"/></gamestage>
@@ -337,7 +337,7 @@ There is a console command: forcegamestage
 		<gamestage stage="1988"><spawn group="hordeStageGS1965" num="182" maxalive="8" duration="3" interval="37"/><spawn group="hordeStageGS1977" num="182" maxalive="8" duration="3"/><spawn group="hordeStageGS1988" num="182" maxalive="8" duration="3"/><spawn group="ZombiesNight" num="1988" maxAlive="2"/></gamestage>
 		<gamestage stage="2000"><spawn group="hordeStageGS1977" num="184" maxalive="8" duration="3"/><spawn group="hordeStageGS1988" num="184" maxalive="8" duration="3"/><spawn group="hordeStageGS2000" num="184" maxalive="8" duration="3"/><spawn group="ZombiesNight" num="2000" maxAlive="2"/></gamestage>
 		<gamestage stage="2011"><spawn group="hordeStageGS1988" num="184" maxalive="8" duration="3" interval="32"/><spawn group="hordeStageGS2000" num="184" maxalive="8" duration="3"/><spawn group="hordeStageGS2011" num="184" maxalive="8" duration="3"/><spawn group="ZombiesNight" num="2011" maxAlive="2"/></gamestage>
-		<gamestage stage="2023"><spawn group="hordeStageGS2000" num="185" maxalive="8" duration="3"/><spawn group="hordeStageGS2011" num="185" maxalive="8" duration="3" interval="9"/><spawn group="hordeStageGS2023" num="185" maxalive="8" duration="3"/><spawn group="ZombiesNight" num="2023" maxAlive="2"/></gamestage>
+		<gamestage stage="2023"><spawn group="hordeStageGS2000" num="185" maxalive="8" duration="3"/><spawn group="hordeStageGS2011" num="185" maxalive="8" duration="3" interval="9"/><spawn group="hordeStageGS2023" num="185" maxalive="8" duration="3"/><spawn group="ZombiesNight" num="2023" maxAlive="2"/></gamestage> -->
 		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  end: auto generated horde stages  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 	</spawner>
 	

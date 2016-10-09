@@ -4,17 +4,380 @@
 
 	<entitygroup name="ZombiesAll">
 		<entity name="zombieBoe" />
+                <entity name="zombieBoe1" />
+                <entity name="zombieBoe3" />
+                <entity name="zombieBoe5" />
+                <entity name="zombieBoe6" />
+                <entity name="zombieBoe7" />
 		<entity name="zombieJoe" />
+                <entity name="zombieJoe1" />
+                <entity name="zombieJoe2" />
+                <entity name="zombieJoe3" />
+                <entity name="zombieJoe6" />
+                <entity name="zombieJoe7" />
 		<entity name="zombieSteve" />
+                <entity name="zombieSteve1" />
+                <entity name="zombieSteve2" />
+                <entity name="zombieSteve3" />
+                <entity name="zombieSteve5" />
+                <entity name="zombieSteve7" />
 		<entity name="zombieMoe" />
+                <entity name="zombieMoe2" />
+                <entity name="zombieMoe3" />
+                <entity name="zombieMoe5" />
+                <entity name="zombieMoe6" />
+                <entity name="zombieMoe7" />
 		<entity name="zombieYo" />
+                <entity name="zombieYo1" />
+                <entity name="zombieYo2" />
+                <entity name="zombieYo3" />
+                <entity name="zombieYo6" />
+                <entity name="zombieYo7" />
 		<entity name="zombieArlene" />
+                <entity name="zombieArlene1" />
+                <entity name="zombieArlene2" />
+                <entity name="zombieArlene5" />
+                <entity name="zombieArlene6" />
+                <entity name="zombieArlene7" />
 		<entity name="zombieDarlene" />
+                <entity name="zombieDarlene1" />
+                <entity name="zombieDarlene2" />
+                <entity name="zombieDarlene5" />
+                <entity name="zombieDarlene6" />
+                <entity name="zombieDarlene7" />
 		<entity name="zombieMarlene" />
+                <entity name="zombieMarlene1" />
+                <entity name="zombieMarlene2" />
+                <entity name="zombieMarlene3" />
+                <entity name="zombieMarlene6" />
+                <entity name="zombieMarlene7" />
 		<entity name="zombieNurse" />
+                <entity name="zombieNurse1" />
+                <entity name="zombieNurse2" />
+                <entity name="zombieNurse3" />
+                <entity name="zombieNurse5" />
+                <entity name="zombieNurse6" />
 		<entity name="zombieSteveCrawler" />
+                <entity name="zombieBoeCrawler" />
+                <entity name="zombieJoeCrawler" />
+                <entity name="zombieMoeCrawler" />
+                <entity name="zombieYoCrawler" />
+                <entity name="zombieArleneCrawler" />
+                <entity name="zombieMarleneCrawler" />
+                <entity name="zombieDarleneCrawler" />
+                <entity name="zombieNurseCrawler" />
+                <entity name="zombieMaleHazmat" />
+                <entity name="zombieFemaleHazmat" />
+                <entity name="ZombieSoldier" />
+                <entity name="ZombieUtilityWorker" />
+                <entity name="ZombieMiner" />
+                <entity name="ZombieFootballPlayer" />
+                <entity name="ZombieSkateboarder"  />
+                <entity name="ZombieCheerleader" />
+                <entity name="zombieOldTimer" />
+                <entity name="ZombieBiker" />
+                <entity name="ZombieFarmer"  />
+                <entity name="ZombieStripper" />
+                <entity name="zombieferal" prob="2" />
 	</entitygroup>
+        
+     	<entitygroup name="ZombiesWilderness">
+                <entity name="zombieBoe" />
+                <entity name="zombieBoe1" />
+                <entity name="zombieBoe3" />
+                <entity name="zombieBoe5" />
+                <entity name="zombieBoe6" />
+                <entity name="zombieBoe7" />
+		<entity name="zombieJoe" />
+                <entity name="zombieJoe1" />
+                <entity name="zombieJoe2" />
+                <entity name="zombieJoe3" />
+                <entity name="zombieJoe6" />
+                <entity name="zombieJoe7" />
+		<entity name="zombieSteve" />
+                <entity name="zombieSteve1" />
+                <entity name="zombieSteve2" />
+                <entity name="zombieSteve3" />
+                <entity name="zombieSteve5" />
+                <entity name="zombieSteve7" />
+		<entity name="zombieMoe" />
+                <entity name="zombieMoe2" />
+                <entity name="zombieMoe3" />
+                <entity name="zombieMoe5" />
+                <entity name="zombieMoe6" />
+                <entity name="zombieMoe7" />
+		<entity name="zombieYo" />
+                <entity name="zombieYo1" />
+                <entity name="zombieYo2" />
+                <entity name="zombieYo3" />
+                <entity name="zombieYo6" />
+                <entity name="zombieYo7" />
+		<entity name="zombieArlene" />
+                <entity name="zombieArlene1" />
+                <entity name="zombieArlene2" />
+                <entity name="zombieArlene5" />
+                <entity name="zombieArlene6" />
+                <entity name="zombieArlene7" />
+		<entity name="zombieDarlene" />
+                <entity name="zombieDarlene1" />
+                <entity name="zombieDarlene2" />
+                <entity name="zombieDarlene5" />
+                <entity name="zombieDarlene6" />
+                <entity name="zombieDarlene7" />
+		<entity name="zombieMarlene" />
+                <entity name="zombieMarlene1" />
+                <entity name="zombieMarlene2" />
+                <entity name="zombieMarlene3" />
+                <entity name="zombieMarlene6" />
+                <entity name="zombieMarlene7" />
+		<entity name="zombieNurse" prob="0.25" />
+                <entity name="zombieNurse1" prob="0.25" />
+                <entity name="zombieNurse2" prob="0.25" />
+                <entity name="zombieNurse3" prob="0.25" />
+                <entity name="zombieNurse5" prob="0.25" />
+                <entity name="zombieNurse6" prob="0.25" />
+		<entity name="zombieSteveCrawler" prob="0.25" />
+                <entity name="zombieBoeCrawler" prob="0.25" />
+                <entity name="zombieJoeCrawler" prob="0.25" />
+                <entity name="zombieMoeCrawler" prob="0.25" />
+                <entity name="zombieYoCrawler" prob="0.25" />
+                <entity name="zombieArleneCrawler" prob="0.25" />
+                <entity name="zombieMarleneCrawler" prob="0.25" />
+                <entity name="zombieDarleneCrawler" prob="0.25" />
+                <entity name="zombieMaleHazmat" prob="0.5" />
+                <entity name="zombieFemaleHazmat" prob="0.5" />
+                <entity name="ZombieSoldier" prob="0.5" />
+                <entity name="ZombieUtilityWorker" prob="0.5" />
+                <entity name="ZombieMiner" prob="2" />
+                <entity name="zombieOldTimer" prob="2" />
+                <entity name="ZombieBiker" />
+                <entity name="ZombieFarmer" prob="2" />
+	</entitygroup>  
+        
+        <entitygroup name="ZombiesWildernessNight">
+                <entity name="zombieBoe" />
+                <entity name="zombieBoe1" />
+                <entity name="zombieBoe3" />
+                <entity name="zombieBoe5" />
+                <entity name="zombieBoe6" />
+                <entity name="zombieBoe7" />
+		<entity name="zombieJoe" />
+                <entity name="zombieJoe1" />
+                <entity name="zombieJoe2" />
+                <entity name="zombieJoe3" />
+                <entity name="zombieJoe6" />
+                <entity name="zombieJoe7" />
+		<entity name="zombieSteve" />
+                <entity name="zombieSteve1" />
+                <entity name="zombieSteve2" />
+                <entity name="zombieSteve3" />
+                <entity name="zombieSteve5" />
+                <entity name="zombieSteve7" />
+		<entity name="zombieMoe" />
+                <entity name="zombieMoe2" />
+                <entity name="zombieMoe3" />
+                <entity name="zombieMoe5" />
+                <entity name="zombieMoe6" />
+                <entity name="zombieMoe7" />
+		<entity name="zombieYo" />
+                <entity name="zombieYo1" />
+                <entity name="zombieYo2" />
+                <entity name="zombieYo3" />
+                <entity name="zombieYo6" />
+                <entity name="zombieYo7" />
+		<entity name="zombieArlene" />
+                <entity name="zombieArlene1" />
+                <entity name="zombieArlene2" />
+                <entity name="zombieArlene5" />
+                <entity name="zombieArlene6" />
+                <entity name="zombieArlene7" />
+		<entity name="zombieDarlene" />
+                <entity name="zombieDarlene1" />
+                <entity name="zombieDarlene2" />
+                <entity name="zombieDarlene5" />
+                <entity name="zombieDarlene6" />
+                <entity name="zombieDarlene7" />
+		<entity name="zombieMarlene" />
+                <entity name="zombieMarlene1" />
+                <entity name="zombieMarlene2" />
+                <entity name="zombieMarlene3" />
+                <entity name="zombieMarlene6" />
+                <entity name="zombieMarlene7" />
+		<entity name="zombieNurse" prob="0.25" />
+                <entity name="zombieNurse1" prob="0.25" />
+                <entity name="zombieNurse2" prob="0.25" />
+                <entity name="zombieNurse3" prob="0.25" />
+                <entity name="zombieNurse5" prob="0.25" />
+                <entity name="zombieNurse6" prob="0.25" />
+		<entity name="zombieSteveCrawler" prob="0.5"/>
+                <entity name="zombieBoeCrawler" prob="0.5" />
+                <entity name="zombieJoeCrawler" prob="0.5" />
+                <entity name="zombieMoeCrawler" prob="0.5" />
+                <entity name="zombieYoCrawler" prob="0.5" />
+                <entity name="zombieArleneCrawler" prob="0.5" />
+                <entity name="zombieMarleneCrawler" prob="0.5" />
+                <entity name="zombieDarleneCrawler" prob="0.5" />
+                <entity name="zombieNurseCrawler" prob="0.5" />
+                <entity name="zombieMaleHazmat" prob="0.5" />
+                <entity name="zombieFemaleHazmat" prob="0.5" />
+                <entity name="ZombieSoldier" prob="0.5" />
+                <entity name="ZombieUtilityWorker" prob="0.5" />
+                <entity name="ZombieMiner" prob="2" />
+                <entity name="zombieOldTimer" prob="2" />
+                <entity name="ZombieBiker" />
+                <entity name="ZombieFarmer" prob="2" />
+	</entitygroup>
+        
+         <entitygroup name="ZombiesCity">
+                <entity name="zombieBoe" />
+                <entity name="zombieBoe1" />
+                <entity name="zombieBoe3" />
+                <entity name="zombieBoe5" />
+                <entity name="zombieBoe6" />
+                <entity name="zombieBoe7" />
+		<entity name="zombieJoe" />
+                <entity name="zombieJoe1" />
+                <entity name="zombieJoe2" />
+                <entity name="zombieJoe3" />
+                <entity name="zombieJoe6" />
+                <entity name="zombieJoe7" />
+		<entity name="zombieSteve" />
+                <entity name="zombieSteve1" />
+                <entity name="zombieSteve2" />
+                <entity name="zombieSteve3" />
+                <entity name="zombieSteve5" />
+                <entity name="zombieSteve7" />
+		<entity name="zombieMoe" />
+                <entity name="zombieMoe2" />
+                <entity name="zombieMoe3" />
+                <entity name="zombieMoe5" />
+                <entity name="zombieMoe6" />
+                <entity name="zombieMoe7" />
+		<entity name="zombieYo" />
+                <entity name="zombieYo1" />
+                <entity name="zombieYo2" />
+                <entity name="zombieYo3" />
+                <entity name="zombieYo6" />
+                <entity name="zombieYo7" />
+		<entity name="zombieArlene" />
+                <entity name="zombieArlene1" />
+                <entity name="zombieArlene2" />
+                <entity name="zombieArlene5" />
+                <entity name="zombieArlene6" />
+                <entity name="zombieArlene7" />
+		<entity name="zombieDarlene" />
+                <entity name="zombieDarlene1" />
+                <entity name="zombieDarlene2" />
+                <entity name="zombieDarlene5" />
+                <entity name="zombieDarlene6" />
+                <entity name="zombieDarlene7" />
+		<entity name="zombieMarlene" />
+                <entity name="zombieMarlene1" />
+                <entity name="zombieMarlene2" />
+                <entity name="zombieMarlene3" />
+                <entity name="zombieMarlene6" />
+                <entity name="zombieMarlene7" />
+		<entity name="zombieNurse" />
+                <entity name="zombieNurse1" />
+                <entity name="zombieNurse2" />
+                <entity name="zombieNurse3" />
+                <entity name="zombieNurse5" />
+                <entity name="zombieNurse6" />
+		<entity name="zombieSteveCrawler" prob="0.5" />
+                <entity name="zombieBoeCrawler" prob="0.5" />
+                <entity name="zombieJoeCrawler" prob="0.5" />
+                <entity name="zombieMoeCrawler" prob="0.5" />
+                <entity name="zombieYoCrawler" prob="0.5" />
+                <entity name="zombieArleneCrawler" prob="0.5" />
+                <entity name="zombieMarleneCrawler" prob="0.5" />
+                <entity name="zombieDarleneCrawler" prob="0.5" />
+                <entity name="zombieNurseCrawler" prob="0.5" />
+                <entity name="zombieMaleHazmat" prob="2" />
+                <entity name="zombieFemaleHazmat" prob="2" />
+                <entity name="ZombieSoldier" prob="2" />
+                <entity name="ZombieUtilityWorker" prob="2" />
+                <entity name="ZombieFootballPlayer" />
+                <entity name="ZombieSkateboarder" />
+                <entity name="ZombieCheerleader" />
+                <entity name="ZombieBiker" />
+                <entity name="ZombieStripper" />
+	</entitygroup> 
 	
+         <entitygroup name="ZombiesCityNight">
+                <entity name="zombieBoe" />
+                <entity name="zombieBoe1" />
+                <entity name="zombieBoe3" />
+                <entity name="zombieBoe5" />
+                <entity name="zombieBoe6" />
+                <entity name="zombieBoe7" />
+		<entity name="zombieJoe" />
+                <entity name="zombieJoe1" />
+                <entity name="zombieJoe2" />
+                <entity name="zombieJoe3" />
+                <entity name="zombieJoe6" />
+                <entity name="zombieJoe7" />
+		<entity name="zombieSteve" />
+                <entity name="zombieSteve1" />
+                <entity name="zombieSteve2" />
+                <entity name="zombieSteve3" />
+                <entity name="zombieSteve5" />
+                <entity name="zombieSteve7" />
+		<entity name="zombieMoe" />
+                <entity name="zombieMoe2" />
+                <entity name="zombieMoe3" />
+                <entity name="zombieMoe5" />
+                <entity name="zombieMoe6" />
+                <entity name="zombieMoe7" />
+		<entity name="zombieYo" />
+                <entity name="zombieYo1" />
+                <entity name="zombieYo2" />
+                <entity name="zombieYo3" />
+                <entity name="zombieYo6" />
+                <entity name="zombieYo7" />
+		<entity name="zombieArlene" />
+                <entity name="zombieArlene1" />
+                <entity name="zombieArlene2" />
+                <entity name="zombieArlene5" />
+                <entity name="zombieArlene6" />
+                <entity name="zombieArlene7" />
+		<entity name="zombieDarlene" />
+                <entity name="zombieDarlene1" />
+                <entity name="zombieDarlene2" />
+                <entity name="zombieDarlene5" />
+                <entity name="zombieDarlene6" />
+                <entity name="zombieDarlene7" />
+		<entity name="zombieMarlene" />
+                <entity name="zombieMarlene1" />
+                <entity name="zombieMarlene2" />
+                <entity name="zombieMarlene3" />
+                <entity name="zombieMarlene6" />
+                <entity name="zombieMarlene7" />
+		<entity name="zombieNurse" />
+                <entity name="zombieNurse1" />
+                <entity name="zombieNurse2" />
+                <entity name="zombieNurse3" />
+                <entity name="zombieNurse5" />
+                <entity name="zombieNurse6" />
+		<entity name="zombieSteveCrawler" />
+                <entity name="zombieBoeCrawler" />
+                <entity name="zombieJoeCrawler" />
+                <entity name="zombieMoeCrawler" />
+                <entity name="zombieYoCrawler" />
+                <entity name="zombieArleneCrawler" />
+                <entity name="zombieMarleneCrawler" />
+                <entity name="zombieDarleneCrawler" />
+                <entity name="zombieNurseCrawler" />
+                <entity name="zombieMaleHazmat" prob="2" />
+                <entity name="zombieFemaleHazmat" prob="2" />
+                <entity name="ZombieSoldier" prob="2" />
+                <entity name="ZombieUtilityWorker" prob="2" />
+                <entity name="ZombieFootballPlayer" />
+                <entity name="ZombieSkateboarder" />
+                <entity name="ZombieCheerleader" />
+                <entity name="ZombieBiker" />
+                <entity name="ZombieStripper" />
+	</entitygroup> 
+        
 	<entitygroup name="ZombiesNight">
 		<entity name="zombieBoe"/>
 		<entity name="zombieJoe" />
@@ -54,9 +417,7 @@
 		<entity name="zombieMarlene" />
 		<entity name="zombieNurse" />		
 		<entity name="zombieSteveCrawler" />
-		<!-- <entity name="zombieFemaleHazmat" prob="0.02" /> -->
-
-	</entitygroup>
+        </entitygroup>
 
 	<entitygroup name="ZombiesWastelandNightNoBears">
 		<!-- 
@@ -136,7 +497,13 @@
 	</entitygroup>
 	
 	<entitygroup name="SnowZombies">
-		<entity name="snowzombie" prob="1"/>
+		<entity name="snowzombie" />
+                <entity name="snowzombie1" />
+                <entity name="snowzombie3" />
+                <entity name="snowzombie5" />
+                <entity name="snowzombie6" />
+                <entity name="snowzombie7" />
+                <entity name="snowzombieCrawler" prob=".25" />
 	</entitygroup>			
 	
 	<entitygroup name="ZombiesBoss">
@@ -271,15 +638,9 @@
 
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  start: auto generated horde groups  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 	<entitygroup name="hordeStageGS1">
-		<entity name="zombieBoe"/>
-		<entity name="ZombieSkateboarder"/>
-		<entity name="zombieMoe"/>
 		<entity name="zombieNurse"/>
-		<entity name="zombieJoe"/>
-		<entity name="zombieMarlene"/>
-		<entity name="ZombieCheerleader"/>
-		<entity name="zombieDarlene"/>
-	</entitygroup>		
+	</entitygroup>	
+        	
 	<entitygroup name="hordeStageGS2">
 		<entity name="ZombieFemaleFatUMA"/>
 		<entity name="zombieJoe"/>

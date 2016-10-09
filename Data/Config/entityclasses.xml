@@ -87,13 +87,13 @@
 	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityNPC"/>
 	<property name="AITask-5" value="ApproachSpot" />
 	<property name="AITask-6" value="Wander" />
-
-	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC" />
-	<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityPlayer" />
-	<property name="AITarget-3" value="BlockingTargetTask" />
-	<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
-	<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityNPC" />
-	<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
+        <property name="AITarget-1" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
+        <property name="AITarget-2" value="SetNearestCorpseAsTarget" param1="EntityNPC" />
+	<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityPlayer" />
+        <property name="AITarget-4" value="SetAsTargetIfHurt" param1="EntityNPC" />
+	<property name="AITarget-5" value="BlockingTargetTask" />
+	<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityNPC" />
+	<property name="AITarget-7" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
 	<!--property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" /-->
 	<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
 	<!-- General entity properties -->
@@ -102,13 +102,11 @@
 	<property name="HandItem" value="handZombie" />
 	<property name="Weight" value="70" />
 	<property name="Immunity" value="sickness;disease;bleeding;wellness" />
-
 	<property name="WanderSpeed" value="0.08" />
 	<property name="ApproachSpeed" value="0.2" />
 	<property name="NightWanderSpeed" value="0.08" />
 	<property name="NightApproachSpeed" value=".2" />
-	<property name="PanicSpeed" value="0.55" />
-
+	<property name="PanicSpeed" value="0.2" />
 	<property name="CanClimbLadders" value="false" />
 	<property name="IsEnemyEntity" value="true" />
 	<!-- This decides on the particle effect played on hit -->
@@ -132,7 +130,7 @@
 	<property name="LootListOnDeath" value="15" />
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="320"/>
 	<property name="DeadBodyHitPoints" value="20" /> <!-- For harvesting -->
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
@@ -174,7 +172,13 @@
 	<property name="SoundDeath" value="Enemies/Feral_Zombie/zombieferaldeath" />
 	<property name="SoundSense" value="Enemies/Feral_Zombie/zombieferalsense" />
 	<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep" />
-	<property name="WalkType" value="2" />
+	<property name="WalkType" value="8" />
+        <property name="MaxHealth" value="2000" />
+        <property name="WanderSpeed" value="0.8" />
+	<property name="ApproachSpeed" value="0.8" />
+	<property name="NightWanderSpeed" value="0.8" />
+        <property name="CanClimbLadders" value="true" />
+	<property name="ExperienceGain" value="1000"/>
 	<property name="HandItem" value="handCopZombie" />
 	<property name="LootListOnDeath" value="61" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
@@ -191,7 +195,6 @@
 	<property name="AvatarController" value="AvatarZombie01Controller" />
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="2" />
-	<property name="MaxHealth" value="200" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
@@ -224,7 +227,6 @@
 	<property name="PhysicsBody" value="zombieStandard" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
-	<property name="LootListOnDeath" value="38" />
 </entity_class>
 
 <entity_class name="zombieArlene" extends="zombie01">
@@ -242,7 +244,6 @@
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
-	<property name="LootListOnDeath" value="38" />
 </entity_class>
 
 <entity_class name="zombieScreamer" extends="zombie01">
@@ -255,7 +256,13 @@
 	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense" />
 	<property name="AvatarController" value="AvatarZombie01Controller" />
 	<property name="ModelType" value="Standard" />
-	<property name="WalkType" value="3" />
+	<property name="WalkType" value="8" />
+        <property name="WanderSpeed" value="1" />
+	<property name="ApproachSpeed" value="1" />
+	<property name="NightWanderSpeed" value="1" />
+	<property name="NightApproachSpeed" value="1" />
+	<property name="PanicSpeed" value="1" />
+        <property name="CanClimbLadders" value="true" />
 	<property name="HandItem" value="handZombie" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
@@ -278,7 +285,6 @@
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
-	<property name="LootListOnDeath" value="38" />
 </entity_class>
 
 <entity_class name="zombieMarlene" extends="zombie01">
@@ -296,7 +302,6 @@
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
-	<property name="LootListOnDeath" value="38" />
 </entity_class>
 
 <entity_class name="zombieYo" extends="zombie01">
@@ -347,7 +352,7 @@
 	<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense" />
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep" />
 	<property name="HandItem" value="handStrongZombie" />
-	<property name="ExperienceGain" value="3500"/>
+	<property name="ExperienceGain" value="640"/>
 </entity_class>
 
 <entity_class name="spiderzombie" extends="zombie01">
@@ -371,7 +376,6 @@
 	<property name="NightWanderSpeed" value="0.08" />
 	<property name="NightApproachSpeed" value="1.1" />
 	<property name="PanicSpeed" value="1.2" />
-	<property name="ExperienceGain" value="1700"/>
 	<property name="HeadDismemberThreshold" value="0"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment /> -->
 	<property name="LowerLegDismemberThreshold" value="0"/>
 	<property name="UpperLegDismemberThreshold" value="0"/>
@@ -667,16 +671,14 @@
 	<property name="HandItem" value="handBear" />
 	<!-- AI properties -->
 	<property name="AITask-1" value="Swim" />
-	<property name="AITask-2" value="BreakDoor" />
-	<property name="AITask-3" value="BreakBlock" />
-	<property name="AITask-4" value="Territorial" param1="10" />
-	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
-	<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="30"/>
+	<property name="AITask-2" value="Territorial" param1="10" />
+	<property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
+	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="30"/>
 	<!-- give up time -->
-	<property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityZombie" param2="30"/>
+	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityZombie" param2="30"/>
 	<!-- give up time -->
-	<property name="AITask-8" value="ApproachSpot" />
-	<property name="AITask-9" value="Wander" />
+	<property name="AITask-6" value="ApproachSpot" />
+	<property name="AITask-7" value="Wander" />
 	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
 	<property name="AITarget-2" value="BlockingTargetTask" />
 	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="8" />
@@ -948,9 +950,6 @@
 	<property name="WalkType" value="7" />
 	<property name="ModelType" value="ZombieUMA" />
 	<property name="RootMotion" value="true" />
-
-	<property name="PanicSpeed" value="0.4" />
-
 	<property name="HasRagdoll" value="true" />
 	<property name="AvatarController" value="AvatarZombieUMAController" />
 	<property name="PhysicsBody" value="zombieUMA" />
@@ -1005,76 +1004,85 @@
 <entity_class name="zombieMaleHazmat" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieMaleHazmat"/>
 	<property name="HandItem" value="handZombieHazMat" />
-	<property name="ExperienceGain" value="1500"/>
+        <property name="WalkType" value="7" />
+        <property name="MaxHealth" value="1000" />
+	<property name="ExperienceGain" value="640"/>
 	<property name="LootListOnDeath" value="65" />
 </entity_class>
 
 <entity_class name="zombieFemaleHazmat" extends="ZombieFemaleUMA" >
 	<property name="Archetype" value="ZombieFemaleHazmat"/>
 	<property name="HandItem" value="handZombieHazMat" />
-	<property name="ExperienceGain" value="1500"/>
+        <property name="WalkType" value="7" />
+        <property name="MaxHealth" value="1000" />
+	<property name="ExperienceGain" value="640"/>
 	<property name="LootListOnDeath" value="65" />
 </entity_class>
 
 <entity_class name="ZombieFemaleFatUMA" extends="ZombieFemaleUMA" >
 	<property name="Archetype" value="ZombieFemaleFatUMA"/>
-	<property name="MaxHealth" value="300" />
 	<property name="WalkType" value="1" />
-	<property name="ExperienceGain" value="1500"/>
 	<property name="LootListOnDeath" value="85" /> <!-- used to be 15 -->
 </entity_class>
 
 <entity_class name="ZombieSoldier" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieSoldier"/>
 	<property name="LootListOnDeath" value="73" />
-	<property name="MaxHealth" value="500" />
-	<property name="ExperienceGain" value="3500"/>
+        <property name="MaxHealth" value="2000" />
+	<property name="ExperienceGain" value="1240"/>
 	<property name="WalkType" value="7" />
 </entity_class>
 
 <entity_class name="ZombieUtilityWorker" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieUtilityWorker"/>
 	<property name="HandItem" value="handZombieWorker" />
-	<property name="ExperienceGain" value="2000"/>
+        <property name="MaxHealth" value="2000" />
+	<property name="ExperienceGain" value="640"/>
 	<property name="LootListOnDeath" value="74" />
+        <property name="WalkType" value="7" />
 </entity_class>
 
 <entity_class name="ZombieMiner" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieMiner"/>
 	<property name="HandItem" value="handZombieWorker" />
-	<property name="ExperienceGain" value="2000"/>
+        <property name="MaxHealth" value="2000" />
+	<property name="ExperienceGain" value="640"/>
 	<property name="LootListOnDeath" value="82" />
+        <property name="WalkType" value="7" />
 </entity_class>
 
 <entity_class name="ZombieFootballPlayer" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieFootballPlayer"/>
-	<property name="MaxHealth" value="200" />
 	<property name="HandItem" value="handZombieFootballPlayer" />
-	<property name="ExperienceGain" value="4000"/>
+        <property name="MaxHealth" value="2000" />
+	<property name="ExperienceGain" value="640"/>
 	<property name="LootListOnDeath" value="78" />
+        <property name="WalkType" value="7" />
 </entity_class>
 
 <entity_class name="ZombieSkateboarder" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieSkateboarder"/>
 	<property name="LootListOnDeath" value="80" />
+        <property name="WalkType" value="7" />
 </entity_class>
 
 <entity_class name="ZombieCheerleader" extends="ZombieFemaleUMA" >
 	<property name="Archetype" value="ZombieCheerleader"/>
-	<property name="MaxHealth" value="80" />
 	<property name="LootListOnDeath" value="79" />
+        <property name="WalkType" value="7" />
 </entity_class>
 
 <entity_class name="zombieOldTimer" extends="zombieUMA" >
 	<property name="Archetype" value="zombieOldTimer"/>
 	<property name="LootListOnDeath" value="81" />
+        <property name="WalkType" value="7" />
 </entity_class>
 
 <entity_class name="ZombieBiker" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieBiker"/>
 	<property name="HandItem" value="handStrongZombie" />
-	<property name="MaxHealth" value="600" />
-	<property name="ExperienceGain" value="3000"/>
+        <property name="MaxHealth" value="2000" />
+	<property name="ExperienceGain" value="640"/>
 	<property name="LootListOnDeath" value="83" />
 	<property name="WalkType" value="7" />
 </entity_class>
@@ -1082,8 +1090,6 @@
 <entity_class name="ZombieFarmer" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieFarmer"/>
 	<property name="HandItem" value="handStrongZombie" />
-	<property name="MaxHealth" value="450" />
-	<property name="ExperienceGain" value="3500"/>
 	<property name="LootListOnDeath" value="85" />
 	<property name="WalkType" value="7" />
 </entity_class>
@@ -1091,8 +1097,8 @@
 <entity_class name="ZombieStripper" extends="ZombieFemaleUMA" >
 	<property name="Archetype" value="ZombieStripper"/>
 	<property name="HandItem" value="handZombieStripper" />
-	<property name="MaxHealth" value="80" />
 	<property name="LootListOnDeath" value="84" />
+        <property name="WalkType" value="7" />
 </entity_class>
 
 <entity_class name="minibike">
@@ -1393,6 +1399,924 @@
 <entity_class name="traderTest" extends="Trader">
 	<property name="Archetype" value="TraderJoel" />
 	<property name="NPCID" value="traderTest" />
+</entity_class>
+
+<!-- Added by Hellgate -->
+
+<entity_class name="zombieBoe1" extends="zombie01">
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
+	<property name="Mesh" value="Zombies/zombieStandardBoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="1" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieBoe3" extends="zombie01">
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
+	<property name="Mesh" value="Zombies/zombieStandardBoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="3" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieBoeCrawler" extends="zombie01">
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
+	<property name="Mesh" value="Zombies/zombieStandardBoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="4" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieBoe5" extends="zombie01">
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
+	<property name="Mesh" value="Zombies/zombieStandardBoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="5" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieBoe6" extends="zombie01">
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
+	<property name="Mesh" value="Zombies/zombieStandardBoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="6" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieBoe7" extends="zombie01">
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
+	<property name="Mesh" value="Zombies/zombieStandardBoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="7" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieJoe1" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardJoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="1" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+
+<entity_class name="zombieJoe2" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardJoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="2" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieJoe3" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardJoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="3" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieJoeCrawler" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardJoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="4" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieJoe6" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardJoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="6" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieJoe7" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardJoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="7" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieMoe2" extends="zombie01">
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
+	<property name="Mesh" value="Zombies/zombieStandardMoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="2" />
+	<property name="HandItem" value="handStrongZombie" />
+	<property name="Weight" value="70" />
+	<property name="PushFactor" value="20" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieMoe3" extends="zombie01">
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
+	<property name="Mesh" value="Zombies/zombieStandardMoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="3" />
+	<property name="HandItem" value="handStrongZombie" />
+	<property name="Weight" value="70" />
+	<property name="PushFactor" value="20" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieMoeCrawler" extends="zombie01">
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
+	<property name="Mesh" value="Zombies/zombieStandardMoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="4" />
+	<property name="HandItem" value="handStrongZombie" />
+	<property name="Weight" value="70" />
+	<property name="PushFactor" value="20" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieMoe5" extends="zombie01">
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
+	<property name="Mesh" value="Zombies/zombieStandardMoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="5" />
+	<property name="HandItem" value="handStrongZombie" />
+	<property name="Weight" value="70" />
+	<property name="PushFactor" value="20" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieMoe6" extends="zombie01">
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
+	<property name="Mesh" value="Zombies/zombieStandardMoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="6" />
+	<property name="HandItem" value="handStrongZombie" />
+	<property name="Weight" value="70" />
+	<property name="PushFactor" value="20" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieMoe7" extends="zombie01">
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
+	<property name="Mesh" value="Zombies/zombieStandardMoeRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="7" />
+	<property name="HandItem" value="handStrongZombie" />
+	<property name="Weight" value="70" />
+	<property name="PushFactor" value="20" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieYo1" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardYoRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="1" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieYo2" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardYoRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="2" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieYo3" extends="zombie01">
+        <property name="Mesh" value="Zombies/zombieStandardYoRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="3" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieYoCrawler" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardYoRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="4" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieYo6" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardYoRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="6" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieYo7" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardYoRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="7" />
+	<property name="PhysicsBody" value="zombieStandard" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieSteve1" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardSteveRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="1" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+</entity_class>
+
+<entity_class name="zombieSteve2" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardSteveRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="2" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+</entity_class>
+
+<entity_class name="zombieSteve3" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardSteveRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="3" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+</entity_class>
+
+<entity_class name="zombieSteve5" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardSteveRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="5" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+</entity_class>
+
+<entity_class name="zombieSteve7" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardSteveRagdoll" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="7" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+</entity_class>
+
+<entity_class name="zombieArlene1" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardArleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="1" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />        
+</entity_class>
+
+<entity_class name="zombieArlene2" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardArleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="2" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieArleneCrawler" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardArleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="4" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieArlene5" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardArleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="5" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieArlene6" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardArleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="6" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieArlene7" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardArleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="7" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieMarlene1" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardMarleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="1" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieMarlene2" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardMarleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="2" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieMarlene3" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardMarleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="3" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieMarleneCrawler" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardMarleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="4" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieMarlene6" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardMarleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="6" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieMarlene7" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardMarleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="7" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieDarlene1" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardDarleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="1" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieDarlene2" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardDarleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="2" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieDarleneCrawler" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardDarleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="4" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieDarlene5" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardDarleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="5" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieDarlene6" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardDarleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="6" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="zombieDarlene7" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardDarleneRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="7" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+</entity_class>
+
+<entity_class name="snowzombie1" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardSnowRagdoll" />
+	<property name="LootListOnDeath" value="66" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="1" />
+	<property name="MaxHealth" value="450" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+	<property name="SoundRandom" value="Enemies/Snow_Zombie_Male/zombiemalesnowroam" />
+	<property name="SoundAlert" value="Enemies/Snow_Zombie_Male/zombiemalesnowalert" />
+	<property name="SoundAttack" value="Enemies/Snow_Zombie_Male/zombiemalesnowattack" />
+	<property name="SoundHurt" value="Enemies/Snow_Zombie_Male/zombiemalesnowpain" />
+	<property name="SoundDeath" value="Enemies/Snow_Zombie_Male/zombiemalesnowdeath" />
+	<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense" />
+	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep" />
+	<property name="HandItem" value="handStrongZombie" />
+	<property name="ExperienceGain" value="640"/>
+</entity_class>
+
+<entity_class name="snowzombie3" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardSnowRagdoll" />
+	<property name="LootListOnDeath" value="66" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="3" />
+	<property name="MaxHealth" value="450" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+	<property name="SoundRandom" value="Enemies/Snow_Zombie_Male/zombiemalesnowroam" />
+	<property name="SoundAlert" value="Enemies/Snow_Zombie_Male/zombiemalesnowalert" />
+	<property name="SoundAttack" value="Enemies/Snow_Zombie_Male/zombiemalesnowattack" />
+	<property name="SoundHurt" value="Enemies/Snow_Zombie_Male/zombiemalesnowpain" />
+	<property name="SoundDeath" value="Enemies/Snow_Zombie_Male/zombiemalesnowdeath" />
+	<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense" />
+	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep" />
+	<property name="HandItem" value="handStrongZombie" />
+	<property name="ExperienceGain" value="640"/>
+</entity_class>
+
+<entity_class name="snowzombieCrawler" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardSnowRagdoll" />
+	<property name="LootListOnDeath" value="66" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="4" />
+	<property name="MaxHealth" value="450" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+	<property name="SoundRandom" value="Enemies/Snow_Zombie_Male/zombiemalesnowroam" />
+	<property name="SoundAlert" value="Enemies/Snow_Zombie_Male/zombiemalesnowalert" />
+	<property name="SoundAttack" value="Enemies/Snow_Zombie_Male/zombiemalesnowattack" />
+	<property name="SoundHurt" value="Enemies/Snow_Zombie_Male/zombiemalesnowpain" />
+	<property name="SoundDeath" value="Enemies/Snow_Zombie_Male/zombiemalesnowdeath" />
+	<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense" />
+	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep" />
+	<property name="HandItem" value="handStrongZombie" />
+	<property name="ExperienceGain" value="640"/>
+</entity_class>
+
+<entity_class name="snowzombie5" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardSnowRagdoll" />
+	<property name="LootListOnDeath" value="66" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="5" />
+	<property name="MaxHealth" value="450" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+	<property name="SoundRandom" value="Enemies/Snow_Zombie_Male/zombiemalesnowroam" />
+	<property name="SoundAlert" value="Enemies/Snow_Zombie_Male/zombiemalesnowalert" />
+	<property name="SoundAttack" value="Enemies/Snow_Zombie_Male/zombiemalesnowattack" />
+	<property name="SoundHurt" value="Enemies/Snow_Zombie_Male/zombiemalesnowpain" />
+	<property name="SoundDeath" value="Enemies/Snow_Zombie_Male/zombiemalesnowdeath" />
+	<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense" />
+	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep" />
+	<property name="HandItem" value="handStrongZombie" />
+	<property name="ExperienceGain" value="640"/>
+</entity_class>
+
+<entity_class name="snowzombie6" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardSnowRagdoll" />
+	<property name="LootListOnDeath" value="66" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="6" />
+	<property name="MaxHealth" value="450" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+	<property name="SoundRandom" value="Enemies/Snow_Zombie_Male/zombiemalesnowroam" />
+	<property name="SoundAlert" value="Enemies/Snow_Zombie_Male/zombiemalesnowalert" />
+	<property name="SoundAttack" value="Enemies/Snow_Zombie_Male/zombiemalesnowattack" />
+	<property name="SoundHurt" value="Enemies/Snow_Zombie_Male/zombiemalesnowpain" />
+	<property name="SoundDeath" value="Enemies/Snow_Zombie_Male/zombiemalesnowdeath" />
+	<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense" />
+	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep" />
+	<property name="HandItem" value="handStrongZombie" />
+	<property name="ExperienceGain" value="640"/>
+</entity_class>
+
+<entity_class name="snowzombie7" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardSnowRagdoll" />
+	<property name="LootListOnDeath" value="66" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="7" />
+	<property name="MaxHealth" value="450" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+	<property name="SoundRandom" value="Enemies/Snow_Zombie_Male/zombiemalesnowroam" />
+	<property name="SoundAlert" value="Enemies/Snow_Zombie_Male/zombiemalesnowalert" />
+	<property name="SoundAttack" value="Enemies/Snow_Zombie_Male/zombiemalesnowattack" />
+	<property name="SoundHurt" value="Enemies/Snow_Zombie_Male/zombiemalesnowpain" />
+	<property name="SoundDeath" value="Enemies/Snow_Zombie_Male/zombiemalesnowdeath" />
+	<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense" />
+	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep" />
+	<property name="HandItem" value="handStrongZombie" />
+	<property name="ExperienceGain" value="640"/>
+</entity_class>
+
+<entity_class name="zombieNurse1" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardNurseRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="1" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+	<property name="LootListOnDeath" value="21" />
+</entity_class>
+
+<entity_class name="zombieNurse2" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardNurseRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="2" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+	<property name="LootListOnDeath" value="21" />
+</entity_class>
+
+<entity_class name="zombieNurse3" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardNurseRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="3" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+	<property name="LootListOnDeath" value="21" />
+</entity_class>
+
+<entity_class name="zombieNurseCrawler" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardNurseRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="4" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+	<property name="LootListOnDeath" value="21" />
+</entity_class>
+
+<entity_class name="zombieNurse5" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardNurseRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="5" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+	<property name="LootListOnDeath" value="21" />
+</entity_class>
+
+<entity_class name="zombieNurse6" extends="zombie01">
+	<property name="Mesh" value="Zombies/zombieStandardNurseRagdoll" />
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
+	<property name="AvatarController" value="AvatarZombie01Controller" />
+	<property name="ModelType" value="Standard" />
+	<property name="WalkType" value="6" />
+	<property name="HandItem" value="handZombie" />
+	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="RootMotion" value="true" />
+	<property name="HasDeathAnim" value="true" />
+	<property name="LootListOnDeath" value="21" />
 </entity_class>
 
 </entity_classes>

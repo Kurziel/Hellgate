@@ -130,7 +130,7 @@ Mesh files no longer used:
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Buff" value="bleeding,criticalBlunt" />
 		<property name="Buff_chance" value=".5,.4" />
-		<property name="DamageBonus.head" value="18" />
+		<property name="DamageBonus.head" value="12" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="12,30" />
@@ -201,7 +201,7 @@ Mesh files no longer used:
 		<property name="Sound_start" value="Weapons/Melee/Torch/torch_swoosh" />
 		<property name="Stamina_usage" value="8" />
 		<property name="Buff" value="burning" />
-		<property name="Buff_chance" value="0.1" />
+		<property name="Buff_chance" value="0.5" />
 		<property name="DamageBonus.head" value="12" />
 		<property name="DamageBonus.glass" value="25" />
 	</property>
@@ -280,7 +280,7 @@ Mesh files no longer used:
 		<property name="Sphere" value="0.1" />
 		<property name="Sound_start" value="swoosh" />
 		<property name="Stamina_usage" value="4" />
-		<property name="DamageBonus.head" value="25" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.leaves" value="25" />
 		<property name="DamageBonus.organic" value="8" />
@@ -317,7 +317,7 @@ Mesh files no longer used:
 		<property name="Sphere" value="0.1" />
 		<property name="Sound_start" value="swoosh" />
 		<property name="Stamina_usage" value="5" />
-		<property name="DamageBonus.head" value="25" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.leaves" value="25" />
 		<property name="DamageBonus.organic" value="10" />
@@ -357,7 +357,7 @@ Mesh files no longer used:
 		<property name="Sound_start" value="swoosh" />
 		<property name="Stamina_usage" value="7" />
 		<property name="DamageBonus.wood" value="3" />
-		<property name="DamageBonus.head" value="25" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.leaves" value="25" />
 		<property name="DamageBonus.organic" value="3" />
@@ -411,10 +411,12 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="Weapons/Ranged/Pistol/pistol_reload" />
 		<property name="Particles_muzzle_fire" value="nozzleflash" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke" />
-		<property name="DamageBonus.head" value="25" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.wood" value="3" />
 		<property name="DamageBonus.earth" value=".4" />
 		<property name="DamageBonus.glass" value="25" />
+                <property name="HeatMapStrength" value="5"/>
+                <property name="HeatMapTime" value="1200"/>
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -461,7 +463,7 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="Weapons/Ranged/44Magnum/44magnum_reload" />
 		<property name="Particles_muzzle_fire" value="nozzleflash" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke" />
-		<property name="DamageBonus.head" value="25" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.wood" value="4" />
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="DamageBonus.glass" value="25" />
@@ -513,7 +515,7 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="Weapons/Ranged/SawedOffPumpShotgun/shotgun_reload" />
 		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-		<property name="DamageBonus.head" value="20" />
+		<property name="DamageBonus.head" value="16" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="2" />
 		<property name="DamageBonus.earth" value=".2" />
@@ -567,7 +569,7 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="Weapons/Ranged/SawedOffPumpShotgun/shotgun_reload" />
 		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-		<property name="DamageBonus.head" value="20" />
+		<property name="DamageBonus.head" value="16" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="2" />
 		<property name="DamageBonus.earth" value=".2" />
@@ -624,7 +626,7 @@ Mesh files no longer used:
 		<property name="Horde_meter_distance" value="20" />
 		<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-		<property name="DamageBonus.head" value="25" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.wood" value="5" />
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="DamageBonus.glass" value="25" />
@@ -681,7 +683,7 @@ Mesh files no longer used:
 		<property name="Horde_meter_distance" value="20" />
 		<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-		<property name="DamageBonus.head" value="25" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.wood" value="5" />
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="DamageBonus.glass" value="25" />
@@ -737,7 +739,7 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="Weapons/Ranged/Hunting_Rifle/hunting_rifle_reload" />
 		<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-		<property name="DamageBonus.head" value="25" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.wood" value="5" />
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="DamageBonus.glass" value="25" />
@@ -789,7 +791,7 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="Weapons/Ranged/SniperRifle/sniperrifle_reload" />
 		<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-		<property name="DamageBonus.head" value="30" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.wood" value="5" />
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="DamageBonus.glass" value="25" />
@@ -878,7 +880,7 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="Weapons/Ranged/Blunderbuss/blunderbuss_reload" />
 		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-		<property name="DamageBonus.head" value="18" />
+		<property name="DamageBonus.head" value="16" />
 		<property name="DamageBonus.wood" value="2.5" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.earth" value=".2" />
@@ -1256,7 +1258,7 @@ Mesh files no longer used:
 		<property name="Sound_start" value="swoosh" />
 		<property name="Stamina_usage" value="4" />
 		<property name="DamageBonus.wood" value="1" />
-		<property name="DamageBonus.head" value="12" />
+		<property name="DamageBonus.head" value="16" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.stone" value=".25" />
 		<property name="DamageBonus.metal" value=".25" />
@@ -1648,7 +1650,7 @@ which does not exist, yet. -->
 		<property name="Sound_end" value="" />
 		<property name="Sound_empty" value="Weapons/weapon_empty" />
 		<property name="Sound_reload" value="Weapons/Motorized/Nailgun/nailgun_reload" />
-		<property name="DamageBonus.head" value="20" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="ActionExp" value="2" />
 	</property>
@@ -1704,7 +1706,7 @@ which does not exist, yet. -->
 		<property name="Horde_meter_distance" value="20" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw" />
 		<property name="DamageBonus.wood" value="10" />
-		<property name="DamageBonus.head" value="25" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="SupportHarvesting" value="true" />
 		<property name="UseMeleeCrosshair" value="true" />
@@ -1754,7 +1756,7 @@ which does not exist, yet. -->
 		<property name="Horde_meter_distance" value="20" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw" />
 		<property name="DamageBonus.wood" value="0.25" />
-		<property name="DamageBonus.head" value="20" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="SupportHarvesting" value="true" />
 		<property name="UseMeleeCrosshair" value="true" />
@@ -2009,7 +2011,7 @@ which does not exist, yet. -->
 		<property name="LifeTime" value="12" />
 		<property name="Buff" value="arrowCriticalBleedout" />
 		<property name="Buff_chance" value="0.5" />
-		<property name="DamageBonus.head" value="20" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="0.1" />
 		<property name="DamageBonus.earth" value="0.1" />
@@ -2046,7 +2048,7 @@ which does not exist, yet. -->
 		<property name="Gravity" value="-4" />
 		<property name="Buff" value="arrowCriticalBleedout" />
 		<property name="Buff_chance" value="0.25" />
-		<property name="DamageBonus.head" value="20" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="0.1" />
 		<property name="DamageBonus.earth" value="0.1" />
@@ -2082,7 +2084,7 @@ which does not exist, yet. -->
 		<property name="LifeTime" value="12" />
 		<property name="Buff" value="arrowCriticalBleedout" />
 		<property name="Buff_chance" value="0.35" />
-		<property name="DamageBonus.head" value="20" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="0.1" />
 		<property name="DamageBonus.earth" value="0.1" />
@@ -2115,7 +2117,7 @@ which does not exist, yet. -->
 		<property name="Velocity" value="75" />
 		<property name="FlyTime" value="0.15" />
 		<property name="LifeTime" value="12" />
-		<property name="DamageBonus.head" value="20" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="2" />
 		<property name="DamageBonus.earth" value="0.1" />
@@ -2183,7 +2185,7 @@ which does not exist, yet. -->
 		<property name="Velocity" value="80" />
 		<property name="FlyTime" value=".25" />
 		<property name="LifeTime" value="17" />
-		<property name="DamageBonus.head" value="20" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="0.1" />
 		<property name="DamageBonus.earth" value="0" />
@@ -2217,7 +2219,7 @@ which does not exist, yet. -->
 		<property name="Velocity" value="85" />
 		<property name="FlyTime" value=".25" />
 		<property name="LifeTime" value="17" />
-		<property name="DamageBonus.head" value="20" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="0.1" />
 		<property name="DamageBonus.earth" value="0" />
@@ -2251,7 +2253,7 @@ which does not exist, yet. -->
 		<property name="Velocity" value="65" />
 		<property name="FlyTime" value=".25" />
 		<property name="LifeTime" value="17" />
-		<property name="DamageBonus.head" value="20" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="0.1" />
 		<property name="DamageBonus.earth" value="0" />
@@ -8040,7 +8042,7 @@ which does not exist, yet. -->
 		<property name="Velocity" value="55" />
 		<property name="FlyTime" value="1" />
 		<property name="LifeTime" value="1" />
-		<property name="DamageBonus.head" value="20" />
+		<property name="DamageBonus.head" value="18" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="0.1" />
 		<property name="DamageBonus.earth" value="0" />
