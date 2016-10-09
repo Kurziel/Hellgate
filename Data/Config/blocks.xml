@@ -2100,7 +2100,7 @@ group desc for stuff like metal siding
 	<property name="HeatMapTime" value="1200"/>
 	<!-- NOTE: HeatMapFrequency is constrained to on blocks that are not tile entities (like the forge or campfire). -->
  	<!-- 1=min, 15=max NOTE: 1 tick is approximately a 1 to 2 minute real-time interval. -->
-	<property name="HeatMapFrequency" value="1"/>
+	<property name="HeatMapFrequency" value="5"/>
 	<drop event="Harvest" name="rottingFlesh" count="1" prob=".4" tool_category="Butcher" />
 	<drop event="Harvest" name="rottingFlesh" count="2" prob=".4" />
 	<drop event="Harvest" name="femur" count="1,2" prob="1" />
