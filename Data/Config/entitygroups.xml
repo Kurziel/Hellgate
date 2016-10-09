@@ -66,18 +66,19 @@
                 <entity name="zombieMarleneCrawler" />
                 <entity name="zombieDarleneCrawler" />
                 <entity name="zombieNurseCrawler" />
-                <entity name="zombieMaleHazmat" prob="2" />
-                <entity name="zombieFemaleHazmat" prob="2" />
-                <entity name="ZombieSoldier" prob="2" />
-                <entity name="ZombieUtilityWorker" prob="2" />
-                <entity name="ZombieMiner" prob="2" />
-                <entity name="ZombieFootballPlayer" prob="2" />
-                <entity name="ZombieSkateboarder" prob="2" />
-                <entity name="ZombieCheerleader" prob="2" />
-                <entity name="zombieOldTimer" prob="2" />
-                <entity name="ZombieBiker" prob="2" />
-                <entity name="ZombieFarmer" prob="2" />
-                <entity name="ZombieStripper" prob="2" />
+                <entity name="zombieMaleHazmat" />
+                <entity name="zombieFemaleHazmat" />
+                <entity name="ZombieSoldier" />
+                <entity name="ZombieUtilityWorker" />
+                <entity name="ZombieMiner" />
+                <entity name="ZombieFootballPlayer" />
+                <entity name="ZombieSkateboarder"  />
+                <entity name="ZombieCheerleader" />
+                <entity name="zombieOldTimer" />
+                <entity name="ZombieBiker" />
+                <entity name="ZombieFarmer"  />
+                <entity name="ZombieStripper" />
+                <entity name="Zzombieferal" prob="2" />
 	</entitygroup>
         
      	<entitygroup name="ZombiesWilderness">

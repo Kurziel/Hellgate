@@ -707,7 +707,7 @@
 		  <property name="TotalPerWave"       value="20,35" />
 		</day>	
 		<day value="19">
-		  <property name="EntityGroupName"    value="ZombieDogGroup" />
+		  <property name="EntityGroupName"    value="ZombiesAll" />
 		  <property name="Time"               value="Any" />
 		  <property name="DelayBetweenSpawns" value="1" />
 		  <property name="TotalAlive"         value="35" />
@@ -2324,7 +2324,7 @@
 	<entityspawner name="NightHorde" dynamic="true" wrapMode="clamp"> <!-- these are feral hordes who will find the player for sure -->
 		<day value="*">
 			<property name="ResetToday"         value="true" />
-			<property name="EntityGroupName"    value="ZombiesNight" />
+			<property name="EntityGroupName"    value="ZombiesAll" />
 			<property name="DelayBetweenSpawns" value="1" />
 			<property name="TotalAlive"         value="0" />
 			<property name="TotalPerWave"       value="0" />
@@ -2593,7 +2593,7 @@
 
 	<entityspawner name="HordeMeterDynamicSpawnNight" dynamic="true">
 		<day value="*">
-			<property name="EntityGroupName"    value="ZombiesNight" />
+			<property name="EntityGroupName"    value="ZombiesAll" />
 			<property name="Time"               value="Any" />
 			<property name="DelayBetweenSpawns" value="1" />
 			<property name="TotalAlive"         value="25" />
