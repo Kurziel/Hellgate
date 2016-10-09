@@ -1615,12 +1615,12 @@ zombieBoe,entityclasses,Entity,KgNone,Infected Survivor,Survivant infecté,Infiz
 zombiecrawler,entityclasses,Entity,KgNone,Crawler,Rampeur,Kriecher,,Oruga
 zombieDarlene,entityclasses,Entity,KgNone,Decayed Mother,Mère décomposée,Verweste Mutter,,Madre podrida
 zombiedog,entityclasses,Entity,KgNone,Zombie Dog,Chien enragé,Zombie-Hund,,Perro zombi
-zombieferal,entityclasses,Entity,KgNone,Feral Walker,Rôdeur féroce,Wilder Streuner,,Caminante salvaje
+zombieferal,entityclasses,Entity,KgNone,Daemon Herald,,,,
 zombieJoe,entityclasses,Entity,KgNone,Festering Cadaver,Cadavre purulent,Eitrige Leiche,,Cadáver descompuesto
 zombieMarlene,entityclasses,Entity,KgNone,Departed Woman,Défunte,Verstorbene Frau,,Mujer difunta
 zombieMoe,entityclasses,Entity,KgNone,Bloated Walker,Rôdeur obèse,Aufgedunsener Streuner,,Caminante hinchado
 zombieNurse,entityclasses,Entity,KgNone,Plagued Nurse,Infirmière pestiférée,Verseuchte Krankenschwester,,Enfermera infestada
-zombieScreamer,entityclasses,Entity,KgNone,Screamer Zombie,Zombie hurleur,Schreier-Zombie,,Zombi gritón
+zombieScreamer,entityclasses,Entity,KgNone,Tormented Seeker,,,,
 zombieSteve,entityclasses,Entity,KgNone,Reanimated Corpse,Corps réanimé,Wiederbelebte Leiche,,Cadáver reanimado
 zombieSteveCrawler,entityclasses,Entity,KgNone,Crawler,Rampeur,Kriecher,,Oruga
 zombieYo,entityclasses,Entity,KgNone,Rotting Carcass,Carcasse pourrie,Verrottender Kadaver,,Cuerpo podrido
@@ -4330,3 +4330,63 @@ DoctorProfessionDesc,blocks,Block,,"Recipes: Herbal Antibiotics, Antibiotics, Fi
 ConstructionProfessionDesc,blocks,Block,,"Recipes: Sledge Hammer, Claw Hammer, Cement, Concrete Mix, Cement Mixer  Extra Gear: Sledge Hammer, Claw Hammer",,,,
 FarmerProfessionDesc,blocks,Block,,"Recipes: Shotgun, Hunting Rifle, Hunting Knife, 762mm Rounds, Shotgun Shells, Herbal Antibiotics   Extra Gear: Hunting Knife, Random Seeds, Fertilizer, Iron Shovel, Iron Hoe",,,,
 MinerProfessionDesc,blocks,Block,,"Recipes: Dynamite, TNT   Extra Gear: Mining Helmet, Iron Pickaxe, Iron Shovel",,,,
+zombieBoe1,entityclasses,Entity,KgNone,Infected Survivor,Survivant infecté,Infizierter Überlebender,,Sobreviviente infectado
+zombieBoe3,entityclasses,Entity,KgNone,Infected Survivor,Survivant infecté,Infizierter Überlebender,,Sobreviviente infectado
+zombieBoeCrawler,entityclasses,Entity,KgNone,Infected Survivor,Survivant infecté,Infizierter Überlebender,,Sobreviviente infectado
+zombieBoe5,entityclasses,Entity,KgNone,Infected Survivor,Survivant infecté,Infizierter Überlebender,,Sobreviviente infectado
+zombieBoe6,entityclasses,Entity,KgNone,Infected Survivor,Survivant infecté,Infizierter Überlebender,,Sobreviviente infectado
+zombieBoe7,entityclasses,Entity,KgNone,Infected Survivor,Survivant infecté,Infizierter Überlebender,,Sobreviviente infectado
+zombieJoe1,entityclasses,Entity,KgNone,Festering Cadaver,Cadavre purulent,Eitrige Leiche,,Cadáver descompuesto
+zombieJoe2,entityclasses,Entity,KgNone,Festering Cadaver,Cadavre purulent,Eitrige Leiche,,Cadáver descompuesto
+zombieJoe3,entityclasses,Entity,KgNone,Festering Cadaver,Cadavre purulent,Eitrige Leiche,,Cadáver descompuesto
+zombieJoeCrawler,entityclasses,Entity,KgNone,Festering Cadaver,Cadavre purulent,Eitrige Leiche,,Cadáver descompuesto
+zombieJoe6,entityclasses,Entity,KgNone,Festering Cadaver,Cadavre purulent,Eitrige Leiche,,Cadáver descompuesto
+zombieJoe7,entityclasses,Entity,KgNone,Festering Cadaver,Cadavre purulent,Eitrige Leiche,,Cadáver descompuesto
+zombieMoe2,entityclasses,Entity,KgNone,Bloated Walker,Rôdeur obèse,Aufgedunsener Streuner,,Caminante hinchado
+zombieMoe3,entityclasses,Entity,KgNone,Bloated Walker,Rôdeur obèse,Aufgedunsener Streuner,,Caminante hinchado
+zombieMoeCrawler,entityclasses,Entity,KgNone,Bloated Walker,Rôdeur obèse,Aufgedunsener Streuner,,Caminante hinchado
+zombieMoe5,entityclasses,Entity,KgNone,Bloated Walker,Rôdeur obèse,Aufgedunsener Streuner,,Caminante hinchado
+zombieMoe6,entityclasses,Entity,KgNone,Bloated Walker,Rôdeur obèse,Aufgedunsener Streuner,,Caminante hinchado
+zombieMoe7,entityclasses,Entity,KgNone,Bloated Walker,Rôdeur obèse,Aufgedunsener Streuner,,Caminante hinchado
+zombieYo1,entityclasses,Entity,KgNone,Rotting Carcass,Carcasse pourrie,Verrottender Kadaver,,Cuerpo podrido
+zombieYo2,entityclasses,Entity,KgNone,Rotting Carcass,Carcasse pourrie,Verrottender Kadaver,,Cuerpo podrido
+zombieYo3,entityclasses,Entity,KgNone,Rotting Carcass,Carcasse pourrie,Verrottender Kadaver,,Cuerpo podrido
+zombieYoCrawler,entityclasses,Entity,KgNone,Rotting Carcass,Carcasse pourrie,Verrottender Kadaver,,Cuerpo podrido
+zombieYo6,entityclasses,Entity,KgNone,Rotting Carcass,Carcasse pourrie,Verrottender Kadaver,,Cuerpo podrido
+zombieYo7,entityclasses,Entity,KgNone,Rotting Carcass,Carcasse pourrie,Verrottender Kadaver,,Cuerpo podrido
+zombieSteve,entityclasses,Entity,KgNone,Reanimated Corpse,Corps réanimé,Wiederbelebte Leiche,,Cadáver reanimado
+zombieSteve1,entityclasses,Entity,KgNone,Reanimated Corpse,Corps réanimé,Wiederbelebte Leiche,,Cadáver reanimado
+zombieSteve2,entityclasses,Entity,KgNone,Reanimated Corpse,Corps réanimé,Wiederbelebte Leiche,,Cadáver reanimado
+zombieSteve3,entityclasses,Entity,KgNone,Reanimated Corpse,Corps réanimé,Wiederbelebte Leiche,,Cadáver reanimado
+zombieSteve5,entityclasses,Entity,KgNone,Reanimated Corpse,Corps réanimé,Wiederbelebte Leiche,,Cadáver reanimado
+zombieSteve7,entityclasses,Entity,KgNone,Reanimated Corpse,Corps réanimé,Wiederbelebte Leiche,,Cadáver reanimado
+zombieArlene1,entityclasses,Entity,KgNone,Putrid Girl,Fille putride,Verfaultes Mädchen,,Niña putrefacta
+zombieArlene2,entityclasses,Entity,KgNone,Putrid Girl,Fille putride,Verfaultes Mädchen,,Niña putrefacta
+zombieArleneCrawler,entityclasses,Entity,KgNone,Putrid Girl,Fille putride,Verfaultes Mädchen,,Niña putrefacta
+zombieArlene5,entityclasses,Entity,KgNone,Putrid Girl,Fille putride,Verfaultes Mädchen,,Niña putrefacta
+zombieArlene6,entityclasses,Entity,KgNone,Putrid Girl,Fille putride,Verfaultes Mädchen,,Niña putrefacta
+zombieArlene7,entityclasses,Entity,KgNone,Putrid Girl,Fille putride,Verfaultes Mädchen,,Niña putrefacta
+zombieMarlene1,entityclasses,Entity,KgNone,Departed Woman,Défunte,Verstorbene Frau,,Mujer difunta
+zombieMarlene2,entityclasses,Entity,KgNone,Departed Woman,Défunte,Verstorbene Frau,,Mujer difunta
+zombieMarlene3,entityclasses,Entity,KgNone,Departed Woman,Défunte,Verstorbene Frau,,Mujer difunta
+zombieMarleneCrawler,entityclasses,Entity,KgNone,Departed Woman,Défunte,Verstorbene Frau,,Mujer difunta
+zombieMarlene6,entityclasses,Entity,KgNone,Departed Woman,Défunte,Verstorbene Frau,,Mujer difunta
+zombieMarlene7,entityclasses,Entity,KgNone,Departed Woman,Défunte,Verstorbene Frau,,Mujer difunta
+zombieDarlene1,entityclasses,Entity,KgNone,Decayed Mother,Mère décomposée,Verweste Mutter,,Madre podrida
+zombieDarlene2,entityclasses,Entity,KgNone,Decayed Mother,Mère décomposée,Verweste Mutter,,Madre podrida
+zombieDarleneCrawler,entityclasses,Entity,KgNone,Decayed Mother,Mère décomposée,Verweste Mutter,,Madre podrida
+zombieDarlene5,entityclasses,Entity,KgNone,Decayed Mother,Mère décomposée,Verweste Mutter,,Madre podrida
+zombieDarlene6,entityclasses,Entity,KgNone,Decayed Mother,Mère décomposée,Verweste Mutter,,Madre podrida
+zombieDarlene7,entityclasses,Entity,KgNone,Decayed Mother,Mère décomposée,Verweste Mutter,,Madre podrida
+snowzombie1,entityclasses,Entity,KgNone,Frozen Lumberjack,Bûcheron gelé,Erfrorener Holzfäller,,Leñador congelado
+snowzombie3,entityclasses,Entity,KgNone,Frozen Lumberjack,Bûcheron gelé,Erfrorener Holzfäller,,Leñador congelado
+snowzombieCrawler,entityclasses,Entity,KgNone,Frozen Lumberjack,Bûcheron gelé,Erfrorener Holzfäller,,Leñador congelado
+snowzombie5,entityclasses,Entity,KgNone,Frozen Lumberjack,Bûcheron gelé,Erfrorener Holzfäller,,Leñador congelado
+snowzombie6,entityclasses,Entity,KgNone,Frozen Lumberjack,Bûcheron gelé,Erfrorener Holzfäller,,Leñador congelado
+snowzombie7,entityclasses,Entity,KgNone,Frozen Lumberjack,Bûcheron gelé,Erfrorener Holzfäller,,Leñador congelado
+zombieNurse1,entityclasses,Entity,KgNone,Plagued Nurse,Infirmière pestiférée,Verseuchte Krankenschwester,,Enfermera infestada
+zombieNurse2,entityclasses,Entity,KgNone,Plagued Nurse,Infirmière pestiférée,Verseuchte Krankenschwester,,Enfermera infestada
+zombieNurse3,entityclasses,Entity,KgNone,Plagued Nurse,Infirmière pestiférée,Verseuchte Krankenschwester,,Enfermera infestada
+zombieNurseCrawler,entityclasses,Entity,KgNone,Plagued Nurse,Infirmière pestiférée,Verseuchte Krankenschwester,,Enfermera infestada
+zombieNurse5,entityclasses,Entity,KgNone,Plagued Nurse,Infirmière pestiférée,Verseuchte Krankenschwester,,Enfermera infestada
+zombieNurse6,entityclasses,Entity,KgNone,Plagued Nurse,Infirmière pestiférée,Verseuchte Krankenschwester,,Enfermera infestada

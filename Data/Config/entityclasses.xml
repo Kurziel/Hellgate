@@ -1733,15 +1733,6 @@
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
 </entity_class>
-<entity_class name="zombieYo8" extends="zombie01">
-	<property name="Mesh" value="Zombies/zombieStandardYoRagdoll" />
-	<property name="AvatarController" value="AvatarZombie01Controller" />
-	<property name="ModelType" value="Standard" />
-	<property name="WalkType" value="8" />
-	<property name="PhysicsBody" value="zombieStandard" />
-	<property name="RootMotion" value="true" />
-	<property name="HasDeathAnim" value="true" />
-</entity_class>
 
 <entity_class name="zombieSteve1" extends="zombie01">
 	<property name="Mesh" value="Zombies/zombieStandardSteveRagdoll" />
@@ -1816,23 +1807,6 @@
 	<property name="AvatarController" value="AvatarZombie01Controller" />
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="2" />
-	<property name="HandItem" value="handZombie" />
-	<property name="PhysicsBody" value="zombieStandardFemale" />
-	<property name="RootMotion" value="true" />
-	<property name="HasDeathAnim" value="true" />
-</entity_class>
-
-<entity_class name="zombieArlene" extends="zombie01">
-	<property name="Mesh" value="Zombies/zombieStandardArleneRagdoll" />
-	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
-	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
-	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
-	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
-	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
-	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
-	<property name="AvatarController" value="AvatarZombie01Controller" />
-	<property name="ModelType" value="Standard" />
-	<property name="WalkType" value="3" />
 	<property name="HandItem" value="handZombie" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
