@@ -78,7 +78,7 @@
                 <entity name="ZombieBiker" />
                 <entity name="ZombieFarmer"  />
                 <entity name="ZombieStripper" />
-                <entity name="Zzombieferal" prob="2" />
+                <entity name="zombieferal" prob="2" />
 	</entitygroup>
         
      	<entitygroup name="ZombiesWilderness">

@@ -1742,9 +1742,9 @@ If you do not declare them, the decorations of the main biome are used.
 		<blockontop blockname="lootStreet" prob="0.001" rotatemax="7"/>
 		<blockontop blockname="randomCars" prob="0.0015" rotatemax="3"/>
 		<blockontop blockname="tire" rotatemax="3" prob="0.001" />
-		<blockontop blockname="cinderBlocks01" rotatemax="3" prob="0.0007" />
+		<!-- <blockontop blockname="cinderBlocks01" rotatemax="3" prob="0.0007" />
 		<blockontop blockname="cinderBlocks02" rotatemax="3" prob="0.0007" />
-		<blockontop blockname="cinderBlocks03" rotatemax="3" prob="0.0007" />
+		<blockontop blockname="cinderBlocks03" rotatemax="3" prob="0.0007" /> -->
 		<blockontop blockname="rock01" prob="0.0007" />
 		<blockontop blockname="rock02" prob="0.0007" />
 		<blockontop blockname="rock04"  prob="0.0007" />

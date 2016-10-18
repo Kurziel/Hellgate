@@ -1,0 +1,6 @@
+
+
+Specifics:
+
+Sanity Stat Icon:  Brainstorm by Stephen JB Thomas from the Noun Project
+UI unit frame textures: Sirillion (from his SMX UI Mod)
