@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Hellgate Icons" />
+		<Description value="Example for loading custom item icons" />
+		<Author value="Kurziel" />
+		<Version value="1" />
+		<Website value="https://kurziel.github.io/Hellgate/" />
+	</ModInfo>
+</xml>

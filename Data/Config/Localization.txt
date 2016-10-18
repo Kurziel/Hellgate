@@ -1581,11 +1581,11 @@ trapDamage1EffectTooltip,buffs,Buff,KeyTrunk FrNone GrNone KgNone SpNone,You are
 warmByFire,buffs,Buff,KgNone,Warmed By A Fire,Chaleur du feu,Vom Feuer gewärmt,,El fuego te calienta
 warmByFireDesc,buffs,Buff,KgNone,You feel warm by the fire.,Le feu vous réchauffe.,Das Feuer wärmt dich.,,Estás calentito junto al fuego.
 warmByFireTooltip,buffs,Buff,KgNone,You feel warm by the fire.,Le feu vous réchauffe.,Das Feuer wärmt dich.,,Estás calentito junto al fuego.
-wellness,buffs,Buff,KgNone,Gain Wellness,Gain en bien-être,Erhalte Wohlbefinden,,Aumenta el bienestar
+wellness,buffs,Buff,KgNone,Gain Sanity,Gain en bien-être,Erhalte Wohlbefinden,,Aumenta el bienestar
 wellnessDesc,buffs,Buff,KgNone,You are gaining health.,Votre santé s'améliore.,Du erhältst Gesundheit.,,Estás recobrando salud.
-wellnessSmallGain,buffs,Buff,KgNone,Wellness Improved,Bien-être augmenté,Wohlbefinden hat sich verbessert,,Bienestar mejorado
-wellnessSmallGainDesc,buffs,Buff,KgNone,Your wellness has improved.,Votre bien-être a augmenté.,Dein Wohlbefinden hat sich verbessert.,,Tu bienestar ha mejorado.
-wellnessSmallGainTooltip,buffs,Buff,KgNone,Your wellness has improved.,Votre bien-être a augmenté.,Dein Wohlbefinden hat sich verbessert.,,Tu bienestar ha mejorado.
+wellnessSmallGain,buffs,Buff,KgNone,Sanity Improved,Bien-être augmenté,Wohlbefinden hat sich verbessert,,Bienestar mejorado
+wellnessSmallGainDesc,buffs,Buff,KgNone,Your sanity has improved.,Votre bien-être a augmenté.,Dein Wohlbefinden hat sich verbessert.,,Tu bienestar ha mejorado.
+wellnessSmallGainTooltip,buffs,Buff,KgNone,Your sanity has improved.,Votre bien-être a augmenté.,Dein Wohlbefinden hat sich verbessert.,,Tu bienestar ha mejorado.
 wellnessTooltip,buffs,Buff,KgNone,You are gaining health.,Votre santé s'améliore.,Du erhältst Gesundheit.,,Estás recobrando salud.
 wet,buffs,Buff,KgNone,Wetness,Humidité,Nässe,,Mojado
 wetDesc,buffs,Buff,KgNone,You are wet which will make you colder. This may or may not be a good thing.,"L'humidité va vous refroidir. Cela peut être une bonne chose, ou pas.","Du bist nass, wodurch dir kälter wird. Das kann eine gute Sache sein. Oder auch nicht.",,"Estás mojado, lo que te hace estar frío. Esto puede ser algo bueno, o todo lo contrario"
@@ -1593,8 +1593,8 @@ wetTooltip,buffs,Buff,KgNone,You are wet.,Vous êtes humide.,Du bist nass.,,Est�
 yuccaJuiceCooling,buffs,Buff,KgNone,Cool Drink,Boisson fraîche,Kühles Getränk,,Bebida fría
 yuccaJuiceCoolingDesc,buffs,Buff,KgNone,You feel cooler.,Vous avez moins chaud.,Du fühlst dich kühler.,,Te sientes más fresco.
 yuccaJuiceCoolingTooltip,buffs,Buff,KgNone,You feel cooler.,Vous avez moins chaud.,Du fühlst dich kühler.,,Te sientes más fresco.
-wellnessDecreased,buffs,Tooltip,KgNone,Wellness ({0}): Maximum health and stamina cap decreased to {1},Bien-être ({0}) : santé et endurance maximales réduites de {1},Wohlbefinden ({0}): Obergrenze für maximale Gesundheit und Ausdauer ist auf {1} gesunken,,Bienestar ({0}): La salud máxima y el límite de resistencia se han reducido a {1}.
-wellnessIncreased,buffs,Tooltip,KgNone,Wellness (+{0}): Maximum health and stamina cap increased to {1},Bien-être (+{0}) : santé et endurance maximales augmentées de {1},Wohlbefinden (+{0}): Obergrenze für maximale Gesundheit und Ausdauer ist auf {1} gestiegen,,Bienestar (+{0}): La salud máxima y el límite de resistencia han aumentado a {1}.
+wellnessDecreased,buffs,Tooltip,KgNone,Sanity ({0}): Maximum health and stamina cap decreased to {1},Bien-être ({0}) : santé et endurance maximales réduites de {1},Wohlbefinden ({0}): Obergrenze für maximale Gesundheit und Ausdauer ist auf {1} gesunken,,Bienestar ({0}): La salud máxima y el límite de resistencia se han reducido a {1}.
+wellnessIncreased,buffs,Tooltip,KgNone,Sanity (+{0}): Maximum health and stamina cap increased to {1},Bien-être (+{0}) : santé et endurance maximales augmentées de {1},Wohlbefinden (+{0}): Obergrenze für maximale Gesundheit und Ausdauer ist auf {1} gestiegen,,Bienestar (+{0}): La salud máxima y el límite de resistencia han aumentado a {1}.
 animalBear,entityclasses,Entity,KgNone,Bear,Ours,Bär,,Oso
 animalChicken,entityclasses,Entity,KgNone,Chicken,Poulet,Huhn,,Pollo
 animalPig,entityclasses,Entity,KgNone,Pig,Porc,Schwein,,Cerdo
@@ -1956,13 +1956,13 @@ potatoDesc,items,Farming,KgNone,"Potatoes can be eaten, crafted into seeds or us
 potatoSeed,items,Farming,EnChanged KgNone,Potato Seed,Graines de pomme de terre,Saatkartoffel,,Semillas de papa
 potatoSeedDesc,items,Farming,KgNone,Plant potato tubers - seeds in layman terms - in fertile dirt to grow potato plants.,"Plantez des tubercules (ou graines, pour les novices) de pomme de terre dans une terre fertile pour faire pousser des plants de pommes de terre.","Pflanze Kartoffelknollen – auch Saatkartoffeln genannt – in fruchtbare Erde, um Kartoffeln zu züchten.",,"Siembra tubérculos (o semillas de papa, como se dice por ahí), en un terreno fértil para cultivar papas."
 baconAndEggs,items,Food,KgNone,Bacon and Eggs,Bacon et œufs,Schinkenspeck mit Eiern,,Huevos con tocino
-baconAndEggsDesc,items,Food,GrChanged,Bacon and eggs will really fill you up and boost your wellness. Cholesterol is the least of your worries now.,Le bacon et les œufs vous rempliront l'estomac et amélioreront votre bien-être. Le cholestérol est le cadet de vos soucis à présent.,Schinkenspeck mit Eiern wird dich richtig satt machen und dein Wohlbefinden erhöhen. Cholesterin ist jetzt dein kleinstes Problem.,,Los huevos con tocino te saciarán e incrementarán tu bienestar. El colesterol es el último de tus problemas en estos momentos.
+baconAndEggsDesc,items,Food,GrChanged,Bacon and eggs will really fill you up and boost your sanity. Cholesterol is the least of your worries now.,Le bacon et les œufs vous rempliront l'estomac et amélioreront votre bien-être. Le cholestérol est le cadet de vos soucis à présent.,Schinkenspeck mit Eiern wird dich richtig satt machen und dein Wohlbefinden erhöhen. Cholesterin ist jetzt dein kleinstes Problem.,,Los huevos con tocino te saciarán e incrementarán tu bienestar. El colesterol es el último de tus problemas en estos momentos.
 bakedPotato,items,Food,KgNone,Baked Potato,Pomme de terre au four,Gebackene Kartoffel,,Papa asada
 bakedPotatoDesc,items,Food,KgNone,A nutritious baked potato full of carbohydrates. Great for couch potatoes too.,Une pomme de terre au four qui regorge de féculents. C'est l'idéal pour les flemmards.,Eine nahrhafte Kartoffel voller Kohlenhydrate. Ideal für Couchkartoffeln.,,Una nutritiva papa asada repleta de carbohidratos. Genial para personas sedentarias.
 beer,items,Food,KgNone,Beer,Bière,Bier,,Cerveza
 beerDesc,items,Food,EnChanged KgNone,"Gain stamina, bravado and stun immunity all in one bottle of this tasty home brewed beer. Just like grandpa used to make.","Boire une bouteille de cette délicieuse bière artisanale vous offre de l'endurance, une dose de bravoure et une haute opinion de vous-même. Exactement comme celle que faisait papy.","Erhalte Ausdauer, Wagemut und ein großes Ego. All das in nur einer Flasche dieses leckeren selbst gebrauten Biers. Das gleiche Bier, das Opa früher immer braute.",,"Aumenta tu resistencia, valentía y tu gran ego con una simple botella de esta deliciosa cerveza casera. Tal y como el abuelo solía hacerla."
 blueberryPie,items,Food,KgNone,Blueberry Pie,Tarte aux myrtilles,Blaubeerkuchen,,Pastel de moras
-blueberryPieDesc,items,Food,KgNone,This homemade blueberry pie is nutritious and raises your wellness. Mmm...just like Grandma used to make.,Cette tarte aux myrtilles faite maison vous nourrit et améliore votre bien-être. Miam... Exactement comme celle que faisait mamie.,Dieser selbst gemachte Blaubeerkuchen ist nahrhaft und erhöht dein Wohlbefinden. Mmm … wie von der Oma.,,Este pastel de moras casero es nutritivo y mejora tu bienestar. Mmmm... Tal y como la abuela solía hacerlo.
+blueberryPieDesc,items,Food,KgNone,This homemade blueberry pie is nutritious and raises your sanity. Mmm...just like Grandma used to make.,Cette tarte aux myrtilles faite maison vous nourrit et améliore votre bien-être. Miam... Exactement comme celle que faisait mamie.,Dieser selbst gemachte Blaubeerkuchen ist nahrhaft und erhöht dein Wohlbefinden. Mmm … wie von der Oma.,,Este pastel de moras casero es nutritivo y mejora tu bienestar. Mmmm... Tal y como la abuela solía hacerlo.
 boiledMeat,items,Food,KgNone,Boiled Meat,Viande bouillie,Gekochtes Fleisch,,Carne cocida
 boiledMeatDesc,items,Food,KgNone,"While not as yummy as grilled meat, boiling the meat makes it the least noticeable for zombies.","Bien qu'elle ait moins de goût que la viande grillée, la viande bouillie attire moins l'attention des zombies.","Es ist zwar nicht so lecker wie gegrilltes Wildbret, aber gekocht bemerken die Zombies das Fleisch auch am wenigsten.",,"Aunque no sabe igual de bien que a la parrilla, la carne cocida es prácticamente imperceptible para los zombis."
 bottledRiverWater,items,Food,KgNone,Bottled Murky Water,Eau trouble en bouteille,Flasche trübes Wasser,,Agua turbia embotellada
@@ -2004,21 +2004,21 @@ canStockDesc,items,Food,KgNone,Stock up on stock or you could eat it now.,Conser
 canTuna,items,Food,KgNone,Can of Tuna,Conserve de thon,Dose Thunfisch,,Lata de atún
 canTunaDesc,items,Food,KgNone,A can of tuna or better known as the chicken of the wasteland.,"Une conserve de thon, plus connu sous le nom de poulet des terres désolées.","Eine Dose mit Thunfisch, der Standardmahlzeit aller Ödlandbewohner.",,"Una lata de atún, también conocida como el pollo del páramo."
 charredMeat,items,Food,KgNone,Charred Meat,Viande brûlée,Verkohltes Wildbret,,Carne chamuscada
-charredMeatDesc,items,Food,KgNone,Charred meat is better than raw meat. It will dehydrate you but boost your wellness. Can attract zombies if carried.,"La viande brûlée est bien meilleure que la viande crue. Elle vous déshydrate, mais améliore votre bien-être. Susceptible d'attirer des zombies si vous la portez.","Verkohltes Wildbret ist besser als rohes Wildbret. Es wird dich dehydrieren, dafür aber dein Wohlbefinden erhöhen. Wer damit durch die Gegend reist, könnte Zombies anziehen.",,"La carne chamuscada es mejor que la carne cruda. Te deshidrata, pero mejorará tu bienestar. Puede atraer zombis si la llevas encima."
+charredMeatDesc,items,Food,KgNone,Charred meat is better than raw meat. It will dehydrate you but boost your sanity. Can attract zombies if carried.,"La viande brûlée est bien meilleure que la viande crue. Elle vous déshydrate, mais améliore votre bien-être. Susceptible d'attirer des zombies si vous la portez.","Verkohltes Wildbret ist besser als rohes Wildbret. Es wird dich dehydrieren, dafür aber dein Wohlbefinden erhöhen. Wer damit durch die Gegend reist, könnte Zombies anziehen.",,"La carne chamuscada es mejor que la carne cruda. Te deshidrata, pero mejorará tu bienestar. Puede atraer zombis si la llevas encima."
 coffee,items,Food,KgNone,Coffee,Café,Kaffee,,Café
 coffeeDesc,items,Food,KgNone,"Coffee gives you energy, keeps your stamina up and helps you stay warm for a limited time.","Le café vous donne de l'énergie, maintient votre endurance à un niveau élevé et vous donne chaud pendant une durée limitée.","Kaffee verleiht dir Energie, hält deine Ausdauer auf einem hohen Niveau und wärmt dich für begrenzte Zeit.",,"El café te da energía, aumenta tu resistencia y te ayuda a entrar en calor por un rato."
 cornBread,items,Food,KgNone,Corn Bread,Pain de maïs,Maisbrot,,Pan de maíz
-cornBreadDesc,items,Food,KgNone,A piece of corn bread can fill you up and improve your wellness.,Un morceau de pain de maïs vous remplit l'estomac et améliore votre bien-être.,Ein Stück Maisbrot füllt deinen Bauch und verbessert dein Wohlbefinden.,,Un trozo de pan de maíz te saciará y mejorará tu bienestar.
+cornBreadDesc,items,Food,KgNone,A piece of corn bread can fill you up and improve your sanity.,Un morceau de pain de maïs vous remplit l'estomac et améliore votre bien-être.,Ein Stück Maisbrot füllt deinen Bauch und verbessert dein Wohlbefinden.,,Un trozo de pan de maíz te saciará y mejorará tu bienestar.
 cornMeal,items,Food,KgNone,Corn Meal,Farine de maïs,Maismehl,,Harina de maíz
 cornMealDesc,items,Food,KgNone,Corn meal is used in several recipes at the campfire.,La farine de maïs est utilisée pour plusieurs compositions au feu de camp.,Maismehl kann für verschiedene Rezepte am Lagerfeuer benutzt werden.,,La harina de maíz se usa en varias recetas en la fogata.
 cornOnTheCob,items,Food,KgNone,Corn on the Cob,Épi de maïs doux,Gekochter Maiskolben,,Mazorca de maíz
-cornOnTheCobDesc,items,Food,KgNone,Corn on the cob can fill you up and up your wellness.,L'épi de maïs doux vous remplit l'estomac et améliore votre bien-être.,Gekochte Maiskolben machen satt und verbessern dein Wohlbefinden.,,Una mazorca de maíz te saciará y mejorará tu bienestar.
+cornOnTheCobDesc,items,Food,KgNone,Corn on the cob can fill you up and up your sanity.,L'épi de maïs doux vous remplit l'estomac et améliore votre bien-être.,Gekochte Maiskolben machen satt und verbessern dein Wohlbefinden.,,Una mazorca de maíz te saciará y mejorará tu bienestar.
 egg,items,Food,KgNone,Egg,Œuf,Ei,,Huevo
 eggboiled,items,Food,KgNone,Boiled Egg,Œuf dur,Gekochtes Ei,,Huevo cocido
-eggboiledDesc,items,Food,KgNone,A boiled egg can fill you up and offers a small wellness boost.,L'œuf dur vous remplit l'estomac et améliore légèrement votre bien-être.,Ein gekochtes Ei macht satt und erhöht dein Wohlbefinden leicht.,,Un huevo cocido te saciará y mejorará un poco tu bienestar.
+eggboiledDesc,items,Food,KgNone,A boiled egg can fill you up and offers a small sanity boost.,L'œuf dur vous remplit l'estomac et améliore légèrement votre bien-être.,Ein gekochtes Ei macht satt und erhöht dein Wohlbefinden leicht.,,Un huevo cocido te saciará y mejorará un poco tu bienestar.
 eggDesc,items,Food,KgNone,Eggs can be eaten raw but should be cooked. Used in several campfire recipes,"Les œufs peuvent être mangés crus, mais devraient être cuits. Ils sont utilisés pour plusieurs compositions au feu de camp.","Eier können roh gegessen werden, sind gekocht aber besser. Sie finden in diversen Lagerfeuer-Rezepten Verwendung.",,"Los huevos se pueden comer crudos, pero es mejor cocinarlos. Se usan en varias recetas en la fogata."
 foodHoney,items,Food,KgNone,Jar of Honey,Pot de miel,Glas Honig,,Tarro de miel
-foodHoneyDesc,items,Food,KgNone,"Honey is one of mother nature's miracles, it restores stamina, gives wellness & can cure the first stage of an infection.","Le miel est l'un des miracles de Mère nature. Il restaure votre endurance, améliore votre bien-être et peut également traiter le début d'une infection.","Honig ist eines der Wunder von Mutter Natur. Er stellt nicht nur Ausdauer wieder her und erhöht dein Wohlbefinden, er kann auch das erste Stadium einer Infektion heilen.",,"La miel es uno de los milagros de la madre naturaleza. No solo restaura la resistencia y proporciona bienestar, sino que también cura infecciones de primer grado."
+foodHoneyDesc,items,Food,KgNone,"Honey is one of mother nature's miracles, it restores stamina, gives sanity & can cure the first stage of an infection.","Le miel est l'un des miracles de Mère nature. Il restaure votre endurance, améliore votre bien-être et peut également traiter le début d'une infection.","Honig ist eines der Wunder von Mutter Natur. Er stellt nicht nur Ausdauer wieder her und erhöht dein Wohlbefinden, er kann auch das erste Stadium einer Infektion heilen.",,"La miel es uno de los milagros de la madre naturaleza. No solo restaura la resistencia y proporciona bienestar, sino que también cura infecciones de primer grado."
 foodYuccaFruit,items,Food,KgNone,Yucca Fruit,Yucca,Yucca-Frucht,,Yuca
 foodYuccaFruitDesc,items,Food,EnChanged,Yucca fruit is edible and can be juiced to gain a bit of water. It is harvested from cacti and yucca plants.,Les fruits de yucca se mangent et peuvent être cueillis sur les cactus.,Die Yucca-Frucht ist essbar und kann von Kakteen geerntet werden.,,La yuca es comestible y se puede recoger de los cactus.
 foodYuccaJuice,items,Food,KgNone,Yucca Juice,Jus de yucca,Yucca-Saft,,Jugo de yuca
@@ -2028,9 +2028,9 @@ goldenRodTeaDesc,items,Food,KgNone,Got dysentery? This bottle of sweet goldenrod
 grainAlcohol,items,Food,KgNone,Grain Alcohol,Alcool de grain,Spiritus,,Alcohol de grano
 grainAlcoholDesc,items,Food,KgNone,Grain alcohol can be made in a beaker at a campfire. Useful for homemade gas and first aid kits.,L'alcool de grain peut être fabriqué dans un bécher sur le feu de camp. Très pratique pour une composition d'essence maison et les trousses de premiers soins.,Spiritus kann in einem Messbecher am Lagerfeuer gefertigt werden. Nützlich für die Fertigung von Benzin und Verbandskasten.,,Se puede elaborar alcohol de grano en un matraz en una fogata. Muy útil para el gas casero y botiquines de primeros auxilios.
 grilledMeat,items,Food,KgNone,Grilled Meat,Viande grillée,Gegrilltes Wildbret,,Carne a la parrilla
-grilledMeatDesc,items,Food,KgNone,"Meat! Meat on fire! Good! Nutritious, filling and will boost your wellness. Can attract zombies if carried.","Viande ! Viande cuite ! Bonne ! Nourrit, remplit et améliore votre bien-être. Susceptible d'attirer des zombies si vous la portez.","Fleisch! Fleisch auf Feuer! Gut! Nahrhaft, sättigend und erhöht dein Wohlbefinden. Wer damit durch die Gegend reist könnte Zombies anziehen.",,"¡Carne! ¡Carne cocinada! ¡Bien! Es nutritiva, te saciará y mejorará tu bienestar. Puede atraer zombis si la llevas encima."
+grilledMeatDesc,items,Food,KgNone,"Meat! Meat on fire! Good! Nutritious, filling and will boost your sanity. Can attract zombies if carried.","Viande ! Viande cuite ! Bonne ! Nourrit, remplit et améliore votre bien-être. Susceptible d'attirer des zombies si vous la portez.","Fleisch! Fleisch auf Feuer! Gut! Nahrhaft, sättigend und erhöht dein Wohlbefinden. Wer damit durch die Gegend reist könnte Zombies anziehen.",,"¡Carne! ¡Carne cocinada! ¡Bien! Es nutritiva, te saciará y mejorará tu bienestar. Puede atraer zombis si la llevas encima."
 meatStew,items,Food,KgNone,Meat Stew,Ragoût de viande,Wildbreteintopf,,Estofado de carne
-meatStewDesc,items,Food,KgNone,A survivor isn't worth his salt if he can't make a meat stew. Raises wellness too!,Un survivant ne vaut rien s'il ne sait pas cuisiner un ragoût de viande. Celui-ci améliore également le bien-être !,"Wer keinen Wildbreteintopf zubereiten kann, darf sich nicht Überlebender schimpfen. Erhöht auch das Wohlbefinden!",,Un sobreviviente no es digno de llamarse así si no puede preparar un estofado de carne. ¡También aumenta el bienestar!
+meatStewDesc,items,Food,KgNone,A survivor isn't worth his salt if he can't make a meat stew. Raises sanity too!,Un survivant ne vaut rien s'il ne sait pas cuisiner un ragoût de viande. Celui-ci améliore également le bien-être !,"Wer keinen Wildbreteintopf zubereiten kann, darf sich nicht Überlebender schimpfen. Erhöht auch das Wohlbefinden!",,Un sobreviviente no es digno de llamarse así si no puede preparar un estofado de carne. ¡También aumenta el bienestar!
 moldyBread,items,Food,KgNone,Moldy Bread,Pain moisi,Schimmeliges Brot,,Pan mohoso
 moldyBreadDesc,items,Food,EnChanged,Eat at your own risk. Can be used to craft antibiotics at a chemistry station.,,"Auf eigene Gefahr essen. Kann benutzt werden, um am Chemietisch Antibiotika zu fertigen.",,
 rawMeat,items,Food,KgNone,Raw Meat,Viande crue,Wildbret,,Carne cruda
@@ -2260,7 +2260,7 @@ painKillersDesc,items,Medical,EnChanged KgNone,Painkillers help you shrug off st
 splint,items,Medical,KgNone,Splint,Attelle,Schiene,,Tablilla
 splintDesc,items,Medical,KgNone,Use splints to mend sprained or broken limbs. Splints do not protect against further injury.,Utilisez les attelles pour soigner les membres blessés ou cassés. Les attelles ne vous protègent pas contre de nouvelles blessures.,"Benutze Schienen, um verstauchte und gebrochene Gliedmaßen zu heilen. Schienen schützen nicht vor weiteren Verletzungen.",,Usa tablillas para curar esguinces o extremidades fracturadas. Las tablillas no evitan otras lesiones.
 vitamins,items,Medical,KgNone,Vitamins,Vitamines,Vitamine,,Vitaminas
-vitaminsDesc,items,Medical,KgNone,Vitamins improve your wellness and can cure early stages of dysentery.,Les vitamines améliorent votre bien-être et peuvent traiter les premiers stades de la dysenterie.,Vitamine verbessern dein Wohlbefinden und können die frühen Stadien von Dysenterie heilen.,,Las vitaminas mejoran tu bienestar y pueden curar las primeras etapas de disentería.
+vitaminsDesc,items,Medical,KgNone,Vitamins improve your sanity and can cure early stages of dysentery.,Les vitamines améliorent votre bien-être et peuvent traiter les premiers stades de la dysenterie.,Vitamine verbessern dein Wohlbefinden und können die frühen Stadien von Dysenterie heilen.,,Las vitaminas mejoran tu bienestar y pueden curar las primeras etapas de disentería.
 sunblocker,items,Medical,KeyTrunk FrNone GrNone KgNone SpNone,Sunblocker,,,,
 sunblockerDesc,items,Medical,KeyTrunk FrNone GrNone KgNone SpNone,It rubs the lotion on it's skin. It does this whenerver it's told.,,,,
 boneShiv,items,Melee,KgNone,Bone Shiv,Surin en os,Knochenklinge,,Pincho de hueso
@@ -2463,7 +2463,7 @@ fastEddieDesc,progression,Skill,KgNone,Loot 25% faster with each rank of this pe
 gunSmithing,progression,Skill,KgNone,Gun Smithing,Forgeron d'armes à feu,Feuerwaffenschmied,,Forjar pistolas
 gunSmithingDesc,progression,Skill,KgNone,Decrease repair penalties and get more from repair kits. Reduce ammunition crafting time. Gain skill by crafting and repairing items from this group.,Diminuez les pénalités de réparation et obtenez davantage de kits de réparation. Diminuez le temps de fabrication des munitions. Obtenez cette compétence en fabriquant et en réparant des objets de ce groupe.,"Senke die Reparaturabzüge und hole mehr aus deinen Reparaturkits heraus. Senke die benötigte Zeit, um Munition zu fertigen. Erhalte die Fertigkeit, indem du Gegenstände aus dieser Kategorie fertigst und reparierst.",,Disminuye los castigos de reparación y otorga más kits de reparación. Reduce el tiempo de fabricación de munición. Mejora tu habilidad fabricando y reparando objetos de este grupo.
 healthNut,progression,Skill,KgNone,Health Nut,Cinglé de santé,Gesundheits-Freak,,Fanático de la salud
-healthNutDesc,progression,Skill,KgNone,Raises your minimum and maximum wellness by 10 points per rank.,Augmente votre bien-être minimal et maximal de 10 points par rang.,Erhöht den Mindest- und Maximalwert für dein Wohlbefinden um 10 Punkte pro Rang.,,Aumenta 10 puntos de tu bienestar máximo y mínimo por nivel.
+healthNutDesc,progression,Skill,KgNone,Raises your minimum and maximum sanity by 10 points per rank.,Augmente votre bien-être minimal et maximal de 10 points par rang.,Erhöht den Mindest- und Maximalwert für dein Wohlbefinden um 10 Punkte pro Rang.,,Aumenta 10 puntos de tu bienestar máximo y mínimo por nivel.
 heavyArmor,progression,Skill,KgNone,Heavy Armor,Armure lourde,Schwere Rüstung,,Armadura pesadas
 heavyArmorDesc,progression,Skill,KgNone,"Receive less damage while wearing scrap, iron or military armor. Gain skill by taking damage while wearing items from this group.","Subissez moins de dégâts lorsque vous portez des vêtements recyclés, en fer ou militaires. Obtenez cette compétence en subissant des dégâts lorsque vous portez des objets de ce groupe.","Erleide weniger Schaden, während du Alteisen-, Eisen- oder Militärkleidung trägst. Erhalte diese Fertigkeit, indem du Schaden erleidest, während du Gegenstände aus dieser Kategorie trägst.",,"Recibe menos daño al vestir chatarra, hierro o armadura militar. Mejora tu habilidad al recibir daño mientras vistes objetos de este grupo."
 knifeGuy,progression,Skill,KgNone,Knife Guy,Homme à lames,Messerjunge,,Chico de los cuchillos
@@ -2511,7 +2511,7 @@ theDecapitatorDesc,progression,Skill,KgNone,"Increases chance to dismember or de
 theFixer,progression,Skill,KgNone,The Fixer,Le réparateur,Der Reparaturmeister,,El reparador
 theFixerDesc,progression,Skill,KgNone,"Reduces repair time, how much repair materials are used, and amount of durability lost with each rank.","Réduit le temps de réparation, la quantité de matériaux de réparation utilisés et la durabilité perdue au fil des rangs.","Senkt pro Rang die Reparaturzeit, wie viele Materialien nötig sind und wie viel Haltbarkeit nach jeder Reparatur verloren geht.",,"Reduce el tiempo de reparación, la cantidad de materiales necesarios para reparar y la durabilidad perdida con cada nivel."
 theSurvivor,progression,Skill,KgNone,The Survivor,Le survivant,Der Überlebende,,El sobreviviente
-theSurvivorDesc,progression,Skill,KgNone,Slows your metabolism so you don't need to eat as often. Gain more wellness from everything you do!,"Ralentit votre métabolisme, vous n'avez pas besoin de manger aussi souvent. Tout ce que vous faites augmente votre bien-être !","Verlangsamt den Metabolismus, damit du seltener essen musst. Erhalte mehr Wohlbefinden durch alles, was du tust!",,Retrasa el metabolismo para que no tengas que comer tanto. ¡Obtén más bienestar por cada cosa que hagas!
+theSurvivorDesc,progression,Skill,KgNone,Slows your metabolism so you don't need to eat as often. Gain more sanity from everything you do!,"Ralentit votre métabolisme, vous n'avez pas besoin de manger aussi souvent. Tout ce que vous faites augmente votre bien-être !","Verlangsamt den Metabolismus, damit du seltener essen musst. Erhalte mehr Wohlbefinden durch alles, was du tust!",,Retrasa el metabolismo para que no tengas que comer tanto. ¡Obtén más bienestar por cada cosa que hagas!
 toolSmithing,progression,Skill,KgNone,Tool Smithing,Forgeron d'outils,Werkzeugschmied,,Forja de herramientas
 toolSmithingDesc,progression,Skill,KgNone,Craft handheld and motorized tools faster and at better quality. Decrease repair penalties and get more from repair kits. Gain skill by crafting and repairing items from this group.,Fabriquez les outils manuels et motorisés plus rapidement et de meilleure qualité. Diminuez les pénalités de réparation et obtenez davantage de kits de réparation. Obtenez cette compétence en fabriquant et en réparant des objets de ce groupe.,"Fertige Handwerkzeuge und motorisierte Werkzeuge schneller und von besserer Qualität. Senke die Reparaturabzüge und hole mehr aus deinen Reparaturkits heraus. Erhalte die Fertigkeit, indem du Gegenstände aus dieser Kategorie fertigst und reparierst.",,Fabrica herramientas de mano y motorizadas más rápido y de mejor calidad. Disminuye los castigos de reparación y otorga más kits de reparación. Mejora tu habilidad fabricando y reparando objetos de este grupo.
 treasureHunter,progression,Skill,KgNone,Treasure Hunter,Chasseur de trésors,Schatzsucher,,Cazador de tesoros
@@ -2605,7 +2605,7 @@ lblAttributeGainHealth,UI,Item Info,KgNone,Gain Health,Gain en santé,Erhalte Ge
 lblAttributeGainSickness,UI,Item Info,KgNone,Gain Sickness,Gain en maladie,Erhalte Krankheit,,Aumenta la enfermedad
 lblAttributeGainStamina,UI,Item Info,KgNone,Gain Stamina,Gain en endurance,Erhalte Ausdauer,,Aumenta la resistencia
 lblAttributeGainWater,UI,Item Info,KgNone,Gain Water,Gain en eau,Erhalte Wasser,,Aumenta el agua
-lblAttributeGainWellness,UI,Item Info,KgNone,Gain Wellness,Gain en bien-être,Erhalte Wohlbefinden,,Aumenta el bienestar
+lblAttributeGainWellness,UI,Item Info,KgNone,Gain sanity,Gain en bien-être,Erhalte Wohlbefinden,,Aumenta el bienestar
 lblAttributeInsulation,UI,Item Info,KgNone,Insulation,Isolation,Wärmedämmung,,Aislamiento
 lblAttributeLightIntensity,UI,Item Info,KgNone,Light Intensity,Intensité légère,Lichtintensität,,Intensidad de luz
 lblAttributeMeleeProtection,UI,Item Info,KgNone,Melee,Armes de mêlée,Nahkampf,,Cuerpo a cuerpo
@@ -2673,7 +2673,7 @@ lblRepairItem,UI,Item Info,KgNone,Repair:,Réparation:,Reparieren:,,Reparar:
 lblRepairItems,UI,Item Info,KgNone,Repair items:\n,Réparer les objets :\n,Gegenstände reparieren:\n,,Reparar objetos:\n
 lblRmvEffect,UI,Item Info,KgNone,Removes,Retire,Entfernt,,Elimina
 lblStamina,UI,Item Info,KgNone,Stamina,Endurance,Ausdauer,,Resistencia
-lblWellness,UI,Item Info,KgNone,Wellness,Bien-être,Wohlbefinden,,Bienestar
+lblWellness,UI,Item Info,KgNone,Sanity,Bien-être,Wohlbefinden,,Bienestar
 loadActionAtlases,UI,Load Actions,KgNone,atlases,atlas,Karten,,atlas
 loadActionBlocks,UI,Load Actions,KgNone,blocks,blocs,Blöcke,,bloques
 loadActionBlockTextures,UI,Load Actions,KgNone,block textures,textures des blocs,Blocktexturen,,texturas de los bloques
@@ -3076,8 +3076,8 @@ xuiSkillMaxHunger,UI,Menu,KgNone,Max Hunger,Faim max,Max. Hunger,,Hambre máxima
 xuiSkillMaxSpeed,UI,Menu,KgNone,Max Speed,Vitesse max,Max. Geschwindigkeit,,Velocidad máxima
 xuiSkillMaxStamina,UI,Menu,KgNone,Max Stamina,Endurance max,Max. Ausdauer,,Resistencia máxima
 xuiSkillMaxThirst,UI,Menu,KgNone,Max Thirst,Soif max,Max. Durst,,Sed máxima
-xuiSkillMaxWellness,UI,Menu,KgNone,Max Wellness,Bien-être max,Max. Wohlbefinden,,Bienestar máximo
-xuiSkillMinWellness,UI,Menu,KgNone,Min Wellness,Bien-être min.,Min. Wohlbefinden,,Bienestar mínimo
+xuiSkillMaxWellness,UI,Menu,KgNone,Max Sanity,Bien-être max,Max. Wohlbefinden,,Bienestar máximo
+xuiSkillMinWellness,UI,Menu,KgNone,Min Sanity,Bien-être min.,Min. Wohlbefinden,,Bienestar mínimo
 xuiSkillNoise,UI,Menu,KgNone,Noise,Bruit,Lärm,,Ruido
 xuiSkillRangedFalloff,UI,Menu,KgNone,Ranged Falloff,Diminution de la portée,Effektive Reichweite,,Caída a distancia
 xuiSkillReloadSpeed,UI,Menu,KgNone,Reload Speed,Vitesse de recharge,Nachladzeit,,Velocidad de recarga
@@ -3091,8 +3091,8 @@ xuiSkillStaminaGain,UI,Menu,KgNone,Stamina Gain,Gain en endurance,Ausdauergewinn
 xuiSkillThirstDegradation,UI,Menu,KgNone,Thirst Degradation,Dégradation liée à la soif,Durst Verringerung,,Degradación por sed
 xuiSkillTreasureRadius,UI,Menu,KgNone,Treasure Radius,Rayon de trésor,Schatzradius,,Radio del tesoro
 xuiSkillWalkSpeed,UI,Menu,KgNone,Walk Speed,Vitesse de marche,Gehgeschwindigkeit,,Velocidad al andar
-xuiSkillWellnessGain,UI,Menu,KgNone,Wellness Gain,Gain en bien-être,Wohlbefinden Gewinn,,Bienestar ganado
-xuiSkillWellnessReduction,UI,Menu,KgNone,Wellness Reduction,Perte en bien-être,Wohlbefinden Verlust,,Reducción de bienestar
+xuiSkillWellnessGain,UI,Menu,KgNone,Sanity Gain,Gain en bien-être,Wohlbefinden Gewinn,,Bienestar ganado
+xuiSkillWellnessReduction,UI,Menu,KgNone,Sanity Reduction,Perte en bien-être,Wohlbefinden Verlust,,Reducción de bienestar
 xuiSmelting,UI,Menu,KgNone,Smelting,Fonte,Schmelzung,,Fundición
 armLength,UI,Menu UMA,KgNone,Arm Length,Longueur des bras,Armlänge,,Longitud de los brazos
 armWidth,UI,Menu UMA,KgNone,Arm Width,Largeur des bras,Armdicke,,Anchura de los brazos
@@ -3402,7 +3402,7 @@ xuiBuffStatMovementSpeed,UI,XUI,KgNone,Movement Speed,Vitesse de déplacement,Be
 xuiBuffStatSickness,UI,XUI,KgNone,Sickness,Maladie,Krankheit,,Enfermedad
 xuiBuffStatStamina,UI,XUI,KgNone,Stamina,Endurance,Ausdauer,,Resistencia
 xuiBuffStatTimeLeft,UI,XUI,KgNone,Time Left,Temps restant,Verbleibende Zeit,,Tiempo restante
-xuiBuffStatWellness,UI,XUI,KgNone,Wellness,Bien-être,Wohlbefinden,,Bienestar
+xuiBuffStatWellness,UI,XUI,KgNone,Sanity,Bien-être,Wohlbefinden,,Bienestar
 xuiCharacter,UI,XUI,KeyTrunk FrNone GrNone KgNone SpNone,CHARACTER,,,,
 xuiClose,UI,XUI,KgNone,CLOSE,FERMER,SCHLIESSEN,,CERRAR
 xuiCombine,UI,XUI,KeyTrunk FrNone GrNone KgNone SpNone,COMBINE,,,,
@@ -3507,7 +3507,7 @@ xuiVending,UI,XUI,KeyTrunk FrNone GrNone KgNone SpNone,VENDING,,,,
 xuiVoice,UI,XUI,KgNone,VOICE,VOIX,STIMME,,VOZ
 xuiWater,UI,XUI,KgNone,WATER,EAU,WASSER,,AGUA
 xuiWaypoints,UI,XUI,KgNone,WAYPOINTS,CHEMINEMENTS,WEGPUNKTE,,PUNTOS DE REGRESO
-xuiWellness,UI,XUI,KgNone,WELLNESS,BIEN-ÊTRE,WOHLBEFINDEN,,BIENESTAR
+xuiWellness,UI,XUI,KgNone,SANITY,BIEN-ÊTRE,WOHLBEFINDEN,,BIENESTAR
 xuiWind,UI,XUI,KgNone,WIND,VENT,WIND,,VIENTO
 xuiWorkstationOutputFull,UI,XUI,KgNone,"No room in workstation output, crafting has been halted until space is cleared.",Plus de place à la sortie du poste de travail. La fabrication a été mise en attente jusqu'à ce que vous fassiez de la place.,"Kein Platz in der Ausgabe der Arbeitsstation, das Fertigen wurde gestoppt, bis du Platz geschaffen hast.",,"No hay espacios libres en la salida de la estación de trabajo, no puedes fabricar hasta que no tengas espacio libre."
 xuiZombieKills,UI,XUI,KgNone,ZOMBIE KILLS,ZOMBIES TUÉS,ZOMBIE-KILLS,,ZOMBIS ASESINADOS
