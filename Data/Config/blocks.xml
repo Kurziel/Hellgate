@@ -4521,9 +4521,10 @@ kind of free
 
 <block id="535" name="jailDoor">
 	<property name="Class" value="DoorSecure" />
-	<property name="Material" value="metal" />
+	<property name="Material" value="Msteel" />
 	<property name="Shape" value="ModelEntity" />
 	<property name="Texture" value="282" />
+	<property name="Collide" value="movement,melee,rocket,bullet" /> <!-- -rocket -->
 	<property name="Tag" value="Door" />
 	<property name="Place" value="Door" />
 	<property name="PlaceEverywhere" value="true" />
@@ -4535,10 +4536,12 @@ kind of free
 	<property name="Mesh-Damage-3" value="Door/Door_DMG2" />
 	<property name="Mesh-Damage-4" value="Door/Door_DMG3" />
 	<property name="Mesh-Damage-5" value="Door/Door_DMG4" />
-	-->
 	<property name="OpenSound" value="UseActions/open_door_metal" />
 	<property name="CloseSound" value="UseActions/close_door_metal" />
-	<property class="RepairItems"> <property name="forgedIron" value="2" /> </property>
+	-->
+	<property name="OpenSound" value="UseActions/open_dumpster" />
+	<property name="CloseSound" value="UseActions/close_dumpster" />
+	<property class="RepairItems"> <property name="forgedSteel" value="10" /> </property>
 	<!--
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="commercialDoor1_v2" />
@@ -4546,14 +4549,13 @@ kind of free
 		<property name="ItemCount" value="10" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
-	-->
 	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
-	<drop event="Harvest" name="scrapIron" count="8" prob="1" />
-	<drop event="Destroy" count="0" />
+	-->
+	<drop event="Harvest" name="scrapIron" count="30" />
+	<drop event="Destroy" name="scrapIron" count="30" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="Group" value="Building" />
 </block>
-
 	<!-- 1 Free -->
 
 <block id="537" name="concreteCNRRound">
@@ -5461,7 +5463,10 @@ kind of free
 	<drop event="Harvest" name="rockSmall" count="22" prob="1" />
 	<drop event="Harvest" name="ironFragment" count="10" prob="1" />
 	<drop event="Destroy" name="rockSmall" count="11" prob="1" />
-	<drop event="Destroy" name="ironFragment" count="5" prob="1" />
+	<drop event="Destroy" name="ironFragment" count="5" prob=".33" />
+	<drop event="Destroy" name="coal" count="10" prob=".33" />
+	<drop event="Destroy" name="potassiumNitratePowder" count="10" prob=".33" />
+	<drop event="Destroy" name="scrapLead" count="10" prob=".33" />
 	<property name="DowngradeBlock" value="rockResourceBroke1" />
 </block>
 

@@ -2022,7 +2022,7 @@ foodHoneyDesc,items,Food,KgNone,"Honey is one of mother nature's miracles, it re
 foodYuccaFruit,items,Food,KgNone,Yucca Fruit,Yucca,Yucca-Frucht,,Yuca
 foodYuccaFruitDesc,items,Food,EnChanged,Yucca fruit is edible and can be juiced to gain a bit of water. It is harvested from cacti and yucca plants.,Les fruits de yucca se mangent et peuvent être cueillis sur les cactus.,Die Yucca-Frucht ist essbar und kann von Kakteen geerntet werden.,,La yuca es comestible y se puede recoger de los cactus.
 foodYuccaJuice,items,Food,KgNone,Yucca Juice,Jus de yucca,Yucca-Saft,,Jugo de yuca
-foodYuccaJuiceDesc,items,Food,KgNone,"Yucca juice can cool you, hydrate you, and give you the stamina of a sexual tyrannosaurus. ","Le jus de yucca peut vous rafraîchir, vous hydrater et vous offrir l'endurance d'un tyrannosaure en rut. ",Yucca-Saft kann dich abkühlen und hydrieren. Er gibt dir auch die Ausdauer eines sexuellen Raubtiers.,,El jugo de yuca te puede refrescar y darte tanta resistencia como la de un tiranosaurio sexual.
+foodYuccaJuiceDesc,items,Food,KgNone,"Yucca juice can cool you, hydrate you, and give you great stamina. ","Le jus de yucca peut vous rafraîchir, vous hydrater et vous offrir l'endurance d'un tyrannosaure en rut. ",Yucca-Saft kann dich abkühlen und hydrieren. Er gibt dir auch die Ausdauer eines sexuellen Raubtiers.,,El jugo de yuca te puede refrescar y darte tanta resistencia como la de un tiranosaurio sexual.
 goldenRodTea,items,Food,KgNone,Golden Rod Tea,Thé à verge d'or,Goldrutentee,,Té de vara de oro
 goldenRodTeaDesc,items,Food,KgNone,Got dysentery? This bottle of sweet goldenrod tea will cure it.,Vous avez la dysenterie ? Cette bouteille de thé de gerbe d'or sucré vous guérira.,Hast du Dysenterie? Diese Flasche mit süßem Goldrutentee wird sie heilen.,,¿Tienes disentería? Esta botella de té de vara de oro dulce te curará.
 grainAlcohol,items,Food,KgNone,Grain Alcohol,Alcool de grain,Spiritus,,Alcohol de grano
@@ -2429,8 +2429,8 @@ lockpicking,progression,Perk,KeyTrunk FrNone GrNone KgNone SpNone,Lock Picking,,
 lockpickingDesc,progression,Perk,KeyTrunk FrNone GrNone KgNone SpNone,Open locks without alerting deceased home-owners.,,,,
 secretStash,progression,Perk,KeyTrunk FrNone GrNone KgNone SpNone,Secret Stash,,,,
 secretStashDesc,progression,Perk,KeyTrunk FrNone GrNone KgNone SpNone,Traders will have better items in their Secret Stash by increasing this perk.,,,,
-sexualTyranosaurus,progression,Perk,GrChanged,Sexual Tyrannosaurus,Tyrannosaure en rut,Wie ein Wildes Tier,,Tiranosaurio sexual
-sexualTyranosaurusDesc,progression,Perk,KgNone,You have the stamina of this ancient beast! Regain stamina faster with every rank.,Vous avez l'endurance de cette bête préhistorique ! Retrouvez votre endurance de plus en plus vite au fil des rangs.,Du hast die Ausdauer eines wilden Tiers! Stelle mit jedem Rang schneller Ausdauer wiederher.,,¡Tienes la resistencia de esta bestia prehistórica! Recupera la resistencia más rápido con cada nivel.
+sexualTyranosaurus,progression,Perk,GrChanged,Going the Distance,Tyrannosaure en rut,Wie ein Wildes Tier,,Tiranosaurio sexual
+sexualTyranosaurusDesc,progression,Perk,KgNone,You never tire! Regain stamina faster with every rank.,Vous avez l'endurance de cette bête préhistorique ! Retrouvez votre endurance de plus en plus vite au fil des rangs.,Du hast die Ausdauer eines wilden Tiers! Stelle mit jedem Rang schneller Ausdauer wiederher.,,¡Tienes la resistencia de esta bestia prehistórica! Recupera la resistencia más rápido con cada nivel.
 splatterGun,progression,Perk,KgNone,Splatter Gun,Flingue éclabousseur,Streuschuss,,La Salpicadora
 splatterGunDesc,progression,Perk,KgNone,Advanced interior decoration. Increase your shotgun's chance to blow off heads and limbs with every rank.,De la décoration d'intérieur plus poussée. Améliorez vos chances d'exploser des têtes et des membres avec votre fusil à pompe au fil des rangs.,"Fortgeschrittene Innendekoration. Erhöhe die Chance deiner Schrotflinte, mit jedem Rang Köpfe und Gliedmaßen abzuschießen.",,Decoración para interiores de alto nivel. Aumenta las posibilidades de que la escopeta haga que los sesos y las extremidades de los enemigos salgan volando con cada nivel.
 theOutlaw,progression,Perk,KgNone,The Outlaw,Le hors-la-loi,Der Gesetzlose,,El Forajido
@@ -4354,7 +4354,6 @@ zombieYo3,entityclasses,Entity,KgNone,Rotting Carcass,Carcasse pourrie,Verrotten
 zombieYoCrawler,entityclasses,Entity,KgNone,Rotting Carcass,Carcasse pourrie,Verrottender Kadaver,,Cuerpo podrido
 zombieYo6,entityclasses,Entity,KgNone,Rotting Carcass,Carcasse pourrie,Verrottender Kadaver,,Cuerpo podrido
 zombieYo7,entityclasses,Entity,KgNone,Rotting Carcass,Carcasse pourrie,Verrottender Kadaver,,Cuerpo podrido
-zombieSteve,entityclasses,Entity,KgNone,Reanimated Corpse,Corps réanimé,Wiederbelebte Leiche,,Cadáver reanimado
 zombieSteve1,entityclasses,Entity,KgNone,Reanimated Corpse,Corps réanimé,Wiederbelebte Leiche,,Cadáver reanimado
 zombieSteve2,entityclasses,Entity,KgNone,Reanimated Corpse,Corps réanimé,Wiederbelebte Leiche,,Cadáver reanimado
 zombieSteve3,entityclasses,Entity,KgNone,Reanimated Corpse,Corps réanimé,Wiederbelebte Leiche,,Cadáver reanimado
@@ -4390,3 +4389,5 @@ zombieNurse3,entityclasses,Entity,KgNone,Plagued Nurse,Infirmière pestiférée,
 zombieNurseCrawler,entityclasses,Entity,KgNone,Plagued Nurse,Infirmière pestiférée,Verseuchte Krankenschwester,,Enfermera infestada
 zombieNurse5,entityclasses,Entity,KgNone,Plagued Nurse,Infirmière pestiférée,Verseuchte Krankenschwester,,Enfermera infestada
 zombieNurse6,entityclasses,Entity,KgNone,Plagued Nurse,Infirmière pestiférée,Verseuchte Krankenschwester,,Enfermera infestada
+jailDoor,blocks,Block,KgNone,Jail Door,,Gefängnistür,,
+jailDoorDesc,blocks,Block,KgNone,Where do you think you're going?,,,,

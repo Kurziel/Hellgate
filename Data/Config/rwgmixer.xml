@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rwgmixer>
-	<world ruleset="vanilla" />    <!-- rwgmixer for COMPOPACK 23 (by Magoli)  - Current Alpha: A15 b83   -->
+	<world ruleset="vanilla" />    <!-- rwgmixer for COMPOPACK 24 (by Magoli)  - Current Alpha: A15 stable   -->
 	
 	<rulesets>
 		<ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0.6" generation_distance="10000" terrain_generator="vanilla">
-			<cell_rule name="wastelandHub" position="0,0" prob="0.05"/>
+			<cell_rule name="wastelandHub" position="0,0" prob="0"/>
 			
 			<cell_rule name="lowDensity" prob="1"/>
 			<cell_rule name="highDensity" prob="0.4"/>
@@ -30,10 +30,10 @@
 			<path_material value="asphalt" /> 
 			<path_radius value="7" />
 
-			<hub_rule name="townSmall" prob="0.2"/>
-			<hub_rule name="ruralSmall" prob="0.5"/>
-			<hub_rule name="ruralHub01" prob="0.5"/>
-
+		<!--	<hub_rule name="townSmall" prob="0.2"/>  -->
+			<hub_rule name="ruralHub01" prob="0.4"/>
+			<hub_rule name="CoronadoCity" prob="0.1" />
+			
 			<wilderness_rule name="wildernessDefault"/>
 		</cell_rule>
 
@@ -44,10 +44,12 @@
 			<path_material value="asphalt" /> 
 			<path_radius value="7" />
 
-			<hub_rule name="townLarge" prob="0.2"/>
-			<hub_rule name="townSmall" prob="0.3"/>
-			<hub_rule name="ruralSmall" prob="0.9"/>			
-			<hub_rule name="ruralHub01" prob="0.4"/>
+			<hub_rule name="townLarge" prob="0.3"/>
+			<hub_rule name="townSmall" prob="0.4"/>
+			<hub_rule name="ruralHub01" prob="0.2"/>
+			<hub_rule name="WastyTown" prob="0.2" />
+			<hub_rule name="wastycity" prob="0.6" />
+			<hub_rule name="CoronadoCity" prob="0.3" />
 	
 			<wilderness_rule name="wildernessDefault" prob="1"/>
 		</cell_rule>
@@ -66,7 +68,7 @@
 		
 		<!-- Custom-Hubs : -->
 		<cell_rule name="ColtTown">
-			<cave_count value="3,2"/>
+			<cave_count value="2,4"/>
 			<path_material value="asphalt"/> 
 			<path_radius value="7"/>	
 			<hub_rule name="ColtTownHub"/>
@@ -74,7 +76,7 @@
 		</cell_rule>		
 		
 		<cell_rule name="CustomTownHub">
-			<cave_count value="3,2"/>
+			<cave_count value="2,4"/>
 			<path_material value="asphalt"/> 
 			<path_radius value="7"/>	
 			<hub_rule name="Custom_Town01_Hub"/>
@@ -82,7 +84,7 @@
 		</cell_rule>		
 		
 		<cell_rule name="medic_Hub">
-			<cave_count value="3,2"/>
+			<cave_count value="2,4"/>
 			<path_material value="asphalt"/> 
 			<path_radius value="7"/>	
 			<hub_rule name="Hospital_Hub"/>
@@ -209,6 +211,33 @@
 			<path_material value="asphalt" /> 
 			<path_radius value="7" />
 			<prefab_rule name="CommonCityPOIs" prob="1"/>
+		</hub_rule>
+
+		<hub_rule name="WastyTown">
+			<hub_type value="town"/>
+			<width value="150, 200" />
+			<height value="150, 250" />
+			<path_material value="asphalt" /> 
+			<path_radius value="7" />
+			<prefab_rule name="WastyTown"/>
+		</hub_rule>
+
+		<hub_rule name="wastycity">
+			<hub_type value="city"/>
+			<width value="206, 206" />
+			<height value="412, 412" />
+			<path_material value="asphalt" /> 
+			<path_radius value="7" />
+			<prefab_rule name="wastycityPOIs" prob="1"/>
+		</hub_rule>
+
+		<hub_rule name="CoronadoCity">
+			<hub_type value="city"/>
+			<width value="206, 206" />
+			<height value="206, 206" />
+			<path_material value="asphalt" /> 
+			<path_radius value="7" />
+			<prefab_rule name="CoronadoCityPOIs" prob="1" />
 		</hub_rule>
 		
 		<hub_rule name="none">
@@ -359,8 +388,8 @@
 			<prefab name="xcostum_Apartments(by_Batman)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Asia_Restaurant_city(by_Redlotus)" min_count="1" max_count="1" />	
 			<prefab name="xcostum_AsylumCity(by_Wsiegel)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Bank(by_Guppycur)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Bank(by_Limodor)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Bank(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_Bank(by_Limodor)" max_count="1" />
 			<prefab name="xcostum_bowlingcenter_city(by_magoli)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Brownstones_House(by_Laz_Man)" min_count="1" max_count="1" />
 			<prefab name="xcostum_CasinoANKH(by_magoli)" min_count="1" max_count="1" />
@@ -382,9 +411,9 @@
 			<prefab name="xcostum_Citymix_15(GasSt-buisnessHse-BunkerTop-Bench)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Courthouse(by_stallionsden)" min_count="1" max_count="1" />
 			<prefab name="xcostum_CurlingCenter(by_magoli)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Farm(by_BigC90210)"  min_count="1" max_count="1" />
-			<prefab name="xcostum_Firehouse(by_Warsaken)"  min_count="1" max_count="2" />
-			<prefab name="xcostum_FuneralHome_city(by_Wsiegel)"  min_count="1" max_count="1" />
+			<prefab name="xcostum_Farm(by_BigC90210)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Firehouse(by_Warsaken)" min_count="1" max_count="2" />
+			<prefab name="xcostum_FuneralHome_city(by_Wsiegel)" max_count="1" />
 			<prefab name="xcostum_Haulier_lg(by_Limodor)" min_count="1" max_count="1" />
 			<prefab name="xcostum_House(by_LastI)"  min_count="1" max_count="1" />
 			<prefab name="xcostum_House(by_ShoNuff)"  min_count="1" max_count="1" />
@@ -394,7 +423,7 @@
 			<prefab name="xcostum_McDonalds(by_BigC90210)" min_count="1" max_count="1" />
 			<prefab name="xcostum_MultiStore(by_ANT)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Orphanage(ex_vanilla_ornate02)" min_count="1" max_count="1" />
-			<prefab name="xcostum_PeerCafe(by_Stallionsden)" min_count="1" max_count="1" />
+			<prefab name="xcostum_PeerCafe(by_Stallionsden)" max_count="1" />
 			<prefab name="xcostum_Plant(by_Wsiegel)" min_count="1" max_count="1" />
 			<prefab name="xcostum_rollerskatedisco(by_magoli)" min_count="1" max_count="1" />
 			<prefab name="xcostum_School_city(by_LazMan)" min_count="1" max_count="1" />
@@ -434,7 +463,7 @@
 			<prefab name="xcostum_OlympicPool(by_BraizD)" max_count="1" />
 
 			<prefab name="hotel_ostrich" max_count="1" />
-		
+			
 			<!-- a few wastypoi's as filler -->
 			<prefab name="xvanilla_mp_waste_bldg_03_intact" max_count="1" prob="0.1" />
 			<prefab name="xvanilla_mp_waste_bldg_06_intact" max_count="1" prob="0.1" />
@@ -444,35 +473,92 @@
 		</prefab_rule>
 
 
+		<!-- Spawning for wastycity :  -->	
+		<prefab_rule name="wastycityPOIs">
+		<prefab rule="cityBlocks" lot_type="CityBlock"/>
+		    <!-- Prefabs:  -->
+			<prefab rule="rubbleBuildingsWhite" min_count="1" max_count="3" prob="0.4" />
+			<prefab rule="rubbleBuildingsRed" min_count="1" max_count="4" prob="0.4" />
+			<prefab rule="rubbleBuildingsTan" min_count="1" max_count="4" prob="0.4" />
+			<prefab rule="rubbleBuildingsGrey" min_count="1" max_count="3" prob="0.4" />
+			<prefab rule="rubbleBuildingsWaste" min_count="1" max_count="5" prob="0.4" />
+			<!-- <prefab name="xcostum_house1(by_Curbolt)" min_count="1" max_count="1" prob="0.4" />  -->		
+			<prefab name="xcostum_collapsed_bldg_01(by_BuLLeTZ)" min_count="1" max_count="1"  prob="0.3" />	
+			<prefab name="xvanilla_mp_waste_bldg_ornate_01_intact" min_count="1" max_count="1"  prob="0.3" />
+			<prefab name="xvanilla_mp_waste_bldg_ornate_02_intact" min_count="1" max_count="1"  prob="0.3" />
+			<prefab name="xvanilla_mp_waste_bldg_ornate_03_intact" min_count="1" max_count="1" prob="0.3" />
+			<prefab name="xvanilla_mp_waste_bldg_governer_08" min_count="1" max_count="1"  prob="0.3" />
+			<prefab name="xvanilla_mp_waste_sewer_hole_1" max_count="2"  prob="0.7" />
+			<prefab name="xvanilla_mp_waste_sewer_hole_2" max_count="2"  prob="0.7" />
+			<prefab name="xvanilla_mp_waste_bldg_03_intact" min_count="1" max_count="2"  prob="0.3" />
+			<prefab name="xvanilla_mp_waste_bldg_06_intact" min_count="1" max_count="2"  prob="0.3" />
+			<prefab name="xvanilla_mp_waste_bldg_07_intact" min_count="1" max_count="2"  prob="0.3" />
+			<prefab name="xvanilla_parking_garage_01" min_count="1" max_count="1"  prob="0.3" />
+			<prefab name="xvanilla_parking_lot_01_city" min_count="1" max_count="1"  prob="0.3" />
+			<prefab name="xvanilla_parking_lot_02_city" min_count="1" max_count="1"  prob="0.2" />
+			<prefab name="xvanilla_parking_lot_03_city" max_count="1"  prob="0.2" />			
+			<prefab name="xcostum_School(by_LazMan)" min_count="1" max_count="1"  prob="0.3" />
+			<prefab name="xcostum_Car_Dealership_old(by_P1ut0nium)" min_count="1" max_count="1" prob="0.2" />
+			<prefab rule="gasStations" min_count="1" max_count="1" prob="0.1" />
+			<prefab rule="burntHousing" min_count="1" max_count="4"  prob="0.4" />	
+			<prefab rule="TrailerhousesMixCity" min_count="1" max_count="2" prob="0.1" />
+			<prefab name="xcostum_OlympicPool(by_BraizD)" min_count="1" max_count="1" />
+		</prefab_rule>	
 
-
+		<!-- Spawning for Coronadocity :  -->
+		<prefab_rule name="CoronadoCityPOIs">
+		<prefab rule="cityBlocks" lot_type="CityBlock"/>
+		    <!-- Prefabs:  -->	
+			<prefab name="xcostum_Wooden_Palisade(by_LuckyStar)" min_count="1" max_count="1" />			
+			<prefab name="xcostum_Coronado_barn_lg(by_Slaan)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Coronado_barn_lg2(by_Slaan)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Coronado_cornfield_crash(by_Slaan)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Coronado_cornfield_missle_silo(by_Slaan)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Coronado_farm_lake(by_Slaan)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Coronado_farmedField(by_Slaan)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Coronado_farmSheds(by_Slaan)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Coronado_shamway_plant(by_Slaan)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Coronado_LLBaseball(by_Curmudgeon)" min_count="1" max_count="1" />		
+			<prefab name="xvanilla_church_graveyard1(for_CoronadoCity)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Coronado_Farm(by_BigC90210)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Coronado_House(by_ShoNuff)" min_count="1" max_count="1" />
+			<prefab name="xvanilla_gas_station1(for_CoronadoCity)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Haulier_lg(by_Limodor)" max_count="1" />
+			<prefab name="xvanilla_police_station1(for_CoronadoCity)" max_count="1" />
+			<prefab name="xvanilla_bombshelter_lg_01(for_CoronadoCity)" max_count="1" />			
+			<prefab name="xvanilla_house_new_mansion_03(for_CoronadoCity)" max_count="1" />
+			<prefab name="xcostum_Coronado_Shrub_Conservatory(by_Werewulfen)" max_count="1" />
+			<prefab name="xvanilla_store_grocery_lg_city" max_count="1" />
+			<prefab name="xcostum_bowlingcenter_city(by_magoli)" max_count="1" />
+		</prefab_rule>		
+		
 
 		<prefab_rule name="wildernessPOIs">
 			<path_material value="gravel" /> 
 			<path_radius value="2" />
 			
-			<prefab rule="trader_settlements" min_count="1" max_count="1" prob="1"/>  <!-- 20? -->
+			<prefab rule="trader_settlements" min_count="1" max_count="1" prob="20"/>
 			<prefab rule="W_POIs_common" prob="0.6"/>
 			<prefab rule="W_POIs_rare" prob="0.3"/>
 			<prefab rule="W_POIs_superrare" prob="0.1"/>
 		</prefab_rule>		
 	
 		<prefab_rule name="W_POIs_common">
-			<prefab rule="W_POIs_common_Set_A" prob="0.4"/>
-			<prefab rule="W_POIs_common_Set_B" prob="0.4"/>
-			<prefab rule="W_POIs_common_Set_C" prob="0.4"/>
+			<prefab rule="W_POIs_common_Set_A" prob="0.3"/>
+			<prefab rule="W_POIs_common_Set_B" prob="0.3"/>
+			<prefab rule="W_POIs_common_Set_C" prob="0.3"/>
 		</prefab_rule>		
 		
 		<prefab_rule name="W_POIs_common_Set_A">
-			<prefab rule="A_frame_houses" prob="0.2" />		
-			<prefab rule="barnsAndSheds" prob="0.3" />
-			<prefab rule="militaryCamps" prob="0.2" />
+			<prefab rule="trader_settlements" min_count="1" max_count="1" prob="0.5"/>
+			<prefab rule="A_frame_houses" max_count="1" prob="0.2" />		
+			<prefab rule="barnsAndSheds" max_count="1" prob="0.3" />
+			<prefab rule="militaryCamps" max_count="1" prob="0.2" />
 			<prefab name="xcostum_Polarstation(by_magoli)" max_count="1" prob="0.4" />			
 			<prefab name="xcostum_WWHouse(by_IceJudge)" max_count="1" prob="0.4"/>
-			<prefab name="xvanilla_house_new_mansion_01" max_count="1" prob="0.4" />			
+			<prefab name="xvanilla_house_new_mansion_01" max_count="1" prob="0.3" />			
 			<prefab name="xcostum_Safehouse(by_Limodor)" max_count="1" prob="0.4"/>
 			<prefab name="xcostum_wastelandtrain(by_Horst)" max_count="1" prob="0.4" />
-			<prefab name="xcostum_MiniBikeRaceTrack(by_Spider)" max_count="1" prob="0.3" />
 			<prefab name="xcostum_TheSect_Followers-of-M(by_magoli)" max_count="1" prob="0.2" />			
 			<prefab name="xvanilla_bombshelter_lg_01" max_count="1" prob="0.2" />
 			<prefab name="xcostum_FuneralParlor(by_Zombieman)" max_count="1" prob="0.1" />
@@ -482,13 +568,13 @@
 
 		<prefab_rule name="W_POIs_common_Set_B">
 			<prefab name="xcostum_Prison1(by_Curbolt)" max_count="1" prob="0.3" /> 
-			<prefab rule="campsites" max_count="1" prob="0.5" />
+			<prefab rule="campsites" max_count="1" prob="0.3" />
 			<prefab rule="cabins" max_count="1" prob="0.5" />		
 			<prefab name="xcostum_Villa(by_Limodor)" max_count="1" prob="0.4"/>		
-			<prefab name="xvanilla_house_new_mansion_02" max_count="1" prob="0.5" />
+			<prefab name="xvanilla_house_new_mansion_02" max_count="1" prob="0.2" />
 			<prefab name="xcostum_House(by_ShoNuff)" max_count="1" prob="0.4" />
-			<prefab name="xcostum_NSiteMissileSilo(byEphoie)" max_count="1" prob="0.4" />
-			<prefab name="xcostum_Stonehenge(by_magoli)" max_count="1" prob="0.3" />
+			<prefab name="xcostum_NSiteMissileSilo(byEphoie)" max_count="1" prob="0.3" />
+			<prefab name="xcostum_Stonehenge(by_magoli)" max_count="1" prob="0.2" />
 			<prefab name="xvanilla_church_graveyard1" max_count="1" prob="0.3" />
 			<prefab name="xcostum_Treehouse_sm(by_magoli)" max_count="1" prob="0.2" />
 			<prefab rule="burntHousing" max_count="1" prob="0.2" />
@@ -497,16 +583,16 @@
 		</prefab_rule>
 		
 		<prefab_rule name="W_POIs_common_Set_C">
-			<prefab rule="waterPOIs" max_count="1" prob="0.5" />
-			<prefab rule="abandoned_houses" max_count="1" prob="0.5" />
+			<prefab rule="waterPOIs" max_count="1" prob="0.4" />
+			<prefab rule="abandoned_houses" max_count="1" prob="0.4" />
 			<prefab name="xcostum_Cabin(by_Sudo)" max_count="1" prob="0.4"/>		
-			<prefab name="xvanilla_house_new_mansion_03" max_count="1" prob="0.4" />		
+			<prefab name="xvanilla_house_new_mansion_03" max_count="1" prob="0.3" />		
 			<prefab name="xvanilla_ranger_station1" max_count="1" prob="0.2" />
 			<prefab name="xcostum_PersianMansion(by_saeid)" max_count="1" prob="0.3" />
-			<prefab name="xcostum_burialshrine(by_snake0567)" max_count="1" prob="0.3" />
+			<prefab name="xcostum_burialshrine(by_snake0567)" max_count="1" prob="0.2" />
 			<prefab name="xvanilla_indian_burial_grounds_01" max_count="1" prob="0.2" />
 			<prefab name="xvanilla_graveyard_sm" max_count="1" prob="0.2" />
-			<prefab rule="countryHousing" max_count="1" prob="0.1" />
+			<prefab rule="countryHousing" max_count="1" prob="0.2" />
 			<prefab name="xcostum_ShoppingCenterShops(by_Warsaken)" max_count="1" prob="0.1" />
 		</prefab_rule>
 
@@ -526,6 +612,7 @@
 			<prefab name="xcostum_H0bbit(by_Limodor)" max_count="1" prob="0.2"/>
 			<prefab name="xvanilla_snowy_ski_lodge" max_count="1" prob="0.2"/>
 			<prefab name="xcostum_Chernobyl(by Maz_Burt)" max_count="1" prob="0.2"/>
+			<prefab name="xcostum_MiniBikeRaceTrack(by_Spider)" max_count="1" prob="0.3" />			
 		</prefab_rule>
 		
 		<prefab_rule name="W_POIs_rare_Set_B">
@@ -583,7 +670,7 @@
 			<prefab rule="bookStores" max_count="2"/>
 			<prefab rule="groceryStores" max_count="2"/>
 			<prefab rule="banks" max_count="1"/>
-			<prefab rule="bars" max_count="1"/>
+			<prefab rule="" max_count="1"/>
 			<prefab rule="funeral_homes" max_count="1" />	
 			<prefab rule="bandit_settlements" max_count="1"/>					
 		</prefab_rule>  -->
@@ -591,7 +678,7 @@
 		
 		<prefab_rule name="ruralSmallPOIs">
 			<prefab name="xcostum_Prison1(by_Curbolt)" max_count="1" prob="0.3" />
-			<prefab rule="gasStations" min_count="1" max_count="1" prob="1"/>
+			<prefab rule="gasStations" max_count="1" prob="1"/>
 			<prefab rule="abandoned_houses" max_count="1" prob="0.2" />
 			<prefab name="xvanilla_utility_waterworks_01" max_count="1" prob="0.2" />			
 			<prefab rule="barnsAndSheds" max_count="1" prob="0.1" />
@@ -668,7 +755,7 @@
 			<prefab rule="bookStores" max_count="1" prob="0.9"/>
 			<prefab rule="groceryStores" max_count="1" prob="0.9"/>
 			<prefab rule="banks" max_count="1" prob="0.9"/>
-			<prefab rule="bars" max_count="1" prob="0.9"/>
+			<prefab rule="restaurants_and_bars" max_count="1" prob="0.9"/>
 			<prefab rule="funeral_homes" max_count="1" prob="0.9"/>					
 			<prefab rule="middleClassHousing"/>
 			<prefab rule="countryHousing"/>
@@ -681,7 +768,7 @@
 			<prefab rule="gunStores" max_count="1"/>
 			<prefab rule="pharmacies" max_count="1"/>
 			<prefab rule="banks" max_count="1"/>
-			<prefab rule="bars" max_count="1"/>
+			<prefab rule="restaurants_and_bars" max_count="1"/>
 			<prefab rule="funeral_homes" max_count="1"/>	
 			<prefab rule="hardwareStores" max_count="1"/>
 			<prefab rule="bookStores" max_count="1"/>
@@ -706,7 +793,6 @@
 			<prefab rule="bandit_settlements" max_count="1"/>
 			<prefab rule="carlots" max_count="1"/>
 			<prefab rule="signsAndLights" prob="0.1"/>
-
 			<prefab rule="bunkers" max_count="2"/>
 			<prefab name="xcostum_Car_Dealership_old(by_P1ut0nium)" max_count="1"/>
 			<prefab name="xcostum_Cell_Tower(by_LuckyStar)" max_count="1"/>
@@ -720,6 +806,40 @@
 			<prefab rule="UtilityPOIs" max_count="1"/>			
 		</prefab_rule>
 
+		
+		<prefab_rule name="WastyTown">
+			<prefab rule="burntHousing" max_count="5" prob="0.4" />
+			<prefab rule="rubbleBuildingsWhite" min_count="1" max_count="3" />
+			<prefab rule="rubbleBuildingsRed" min_count="1" max_count="4" />
+			<prefab rule="rubbleBuildingsTan" min_count="1" max_count="4" />
+			<prefab rule="rubbleBuildingsGrey" min_count="1" max_count="3" />
+			<prefab rule="rubbleBuildingsWaste" min_count="1" max_count="5" />
+			<prefab rule="garages" max_count="1" prob="0.1" />
+			<prefab name="xvanilla_mp_waste_sewer_hole_1" max_count="1"  prob="0.5" />
+			<prefab name="xvanilla_mp_waste_sewer_hole_2" max_count="1"  prob="0.5" />
+			<prefab name="xvanilla_mp_waste_tree_pile_02" max_count="2"  prob="0.5" />
+			<prefab name="xvanilla_vacant_lot_med_01" max_count="1"  prob="0.5" />
+			<prefab name="xvanilla_vacant_lot_med_02" max_count="2"  prob="0.5" />
+			<prefab name="xvanilla_vacant_lot_sm_01" max_count="1"  prob="0.5" />
+			<prefab name="xvanilla_vacant_lot_sm_02" max_count="2"  prob="0.5" />
+			<prefab name="xvanilla_graveyard_sm" max_count="1" prob="0.7" />		
+			<prefab name="xvanilla_bombshelter_lg_01" max_count="1" prob="0.15" />
+			<prefab name="xvanilla_parking_lot_01" min_count="1" max_count="1"  prob="0.4" />
+			<prefab name="xcostum_Car_Dealership_old(by_P1ut0nium)" max_count="1"  prob="0.2" />
+			<prefab name="xvanilla_mp_waste_bldg_ornate_01_intact" max_count="1"  prob="0.7" />
+			<prefab name="xvanilla_mp_waste_bldg_ornate_02_intact" max_count="1"  prob="0.7" />
+			<prefab name="xvanilla_mp_waste_bldg_ornate_03_intact" max_count="1" prob="0.3" />
+			<prefab name="xvanilla_mp_waste_bldg_governer_08" max_count="1"  prob="0.3" />
+			<prefab name="xvanilla_mp_waste_bldg_03_intact" max_count="1"  prob="0.3" />
+			<prefab name="xvanilla_mp_waste_bldg_06_intact" max_count="1"  prob="0.3" />
+			<prefab name="xvanilla_mp_waste_bldg_07_intact" max_count="1"  prob="0.3" />
+			<prefab rule="barnsAndSheds" max_count="1" prob="0.1" />
+			<prefab rule="bunkers" max_count="1" prob="0.2" />
+			<prefab rule="TrailerHouses" max_count="1" prob="0.1" />
+			<prefab rule="TrailerhousesMix" max_count="1" prob="0.1" />
+			<prefab rule="abandoned_houses" min_count="1" max_count="3" prob="0.5" />
+		</prefab_rule>		
+		
 		
 		<!-- from here pure Prefab-groups: -->
 		<prefab_rule name="A_frame_houses">
@@ -780,11 +900,6 @@
 			<prefab name="oldwest_stables" />
 		</prefab_rule>
 		
-		<prefab_rule name="bars">
-			<prefab name="bar_stripclub_01" />
-			<prefab name="bar_sm_01" />
-		</prefab_rule>
-
 		<prefab_rule name="bookStores">
 			<prefab name="store_book_sm_01" prob="0.6"/>
 			<prefab name="store_book_lg_01" prob="0.4"/>
@@ -862,6 +977,9 @@
 			<prefab name="xcostum_Dark_Mausoleum32(by_LuckyStar)" />
 			<prefab name="xcostum_Church(by_Guppycur)" />
 			<prefab name="xcostum_crematory(by_magoli)" />
+			<prefab name="church_graveyard1"/>
+			<prefab name="cemetery_01" />
+			<prefab name="cemetery_02" />			
 		</prefab_rule>		
 		
 		<prefab_rule name="cityBlocks">
@@ -872,13 +990,10 @@
 		</prefab_rule>		
 		
 		<prefab_rule name="countryHousing">
-			<prefab name="church_graveyard1"/>
 			<prefab name="houseranchwhite1"/>
 			<prefab name="houseranchtan1"/>
 			<prefab name="houseranchtan2"/>
 			<prefab name="houseranchblue1"/>
-			<prefab name="cemetery_01" />
-			<prefab name="cemetery_02" />
 		</prefab_rule>
 
 		<prefab_rule name="Curbolts_houses">
@@ -894,12 +1009,14 @@
 		</prefab_rule>
 
 		<prefab_rule name="entertainment">
-			<prefab name="theater_01" max_count="1"/>
+			<prefab name="theater_01" />
 			<prefab name="xcostum_bowlingcenter(by_magoli)" />
 			<prefab name="xcostum_circus(by_magoli)" />
 			<prefab name="xcostum_stripclub(by_magoli)" />
 			<prefab name="xcostum_StripClub(by_Wsiegel)" />
 			<prefab name="xcostum_ArtGallery(by_Wsiegel)"  />
+			<prefab name="bar_theater_01" />
+			<prefab name="skate_park_01" />			
 		</prefab_rule>		
 		
 		<prefab_rule name="factories">
@@ -997,7 +1114,8 @@
 			<prefab name="housetanpyramid2"/>
 			<prefab name="housewhitepyramid1"/>
 			<prefab name="housewhitepyramid2"/>
-			<prefab name="xcostum_kuldbrickhouse(by_Kuldiin)" />			
+			<prefab name="xcostum_kuldbrickhouse(by_Kuldiin)" />
+			<prefab name="trailer_park_01" />			
 		</prefab_rule>
 
 		<prefab_rule name="middleClassHousing">
@@ -1053,6 +1171,8 @@
 			<prefab name="xcostum_moestaverne(by_magoli)" />
 			<prefab name="xcostum_Restaurant(by_Gertle)" />
 			<prefab name="xcostum_Cantine(by_Limodor)" />
+			<prefab name="bar_stripclub_01" />
+			<prefab name="bar_sm_01" />			
 		</prefab_rule>		
 		
 		<prefab_rule name="rubbleBuildingsWhite">
@@ -1090,21 +1210,6 @@
 			<prefab name="mp_waste_sewer_hole_1" />
 		</prefab_rule>
 
-		<!-- ! -->
-		<prefab_rule name="rural">
-			<prefab name="junkyard_lg_01" />
-			<prefab name="junkyard_med_01" />
-			<prefab name="snowy_ski_lodge" />
-			<prefab name="sawmill_01_snow" />
-			<prefab name="utility_celltower_01" />
-			<prefab name="utility_celltower_02" />
-			<prefab name="cemetery_01" />
-			<prefab name="cemetery_02" />
-			<prefab name="prison_01" />
-			<prefab name="installation_red_mesa" />
-		</prefab_rule>		
-		
-		
 		<prefab_rule name="signsAndLights">
 			<prefab name="street_light_02"/>
 			<prefab name="sign_slow" prob="0.25"/>
@@ -1193,19 +1298,6 @@
 			<prefab name="oldwest_watertower" />
 		</prefab_rule>
 	
-		<!--
-		<prefab_rule name="wildernessMisc">
-			<prefab name="houseburnt5"/>
-			<prefab name="oldwest_graveyard"/>
-			<prefab name="ranger_station1" />
-			<prefab name="utility_celltower_01" />
-			<prefab name="utility_celltower_02" />
-			<prefab name="cemetery_01" />
-			<prefab name="cemetery_02" />
-			<prefab name="bar_stripclub_01" />
-		</prefab_rule>
-		-->
-		
 		
 		<!-- Hub-Prefabs: -->
 		<prefab_rule name="ColtTown_POIs">
@@ -1441,7 +1533,7 @@
 				<street start_point="42,-43" end_point="42,0" path_material="asphalt" path_radius="6"/>         <!-- inner e -->				
 				<street start_point="-43,41" end_point="48,41" path_material="asphalt" path_radius="6"/>        <!-- inner n -->
 
-				<street start_point="0,-760" end_point="0,-43" path_material="asphalt" path_radius="7"/>        <!-- pieces s -->
+				<street start_point="0,-76" end_point="0,-43" path_material="asphalt" path_radius="7"/>        <!-- pieces s -->
 				<street start_point="-77,0" end_point="-43,0" path_material="asphalt" path_radius="7"/>         <!-- pieces w -->	
 				<street start_point="35,0" end_point="76,0" path_material="asphalt" path_radius="7"/>           <!-- pieces e -->		
 				<street start_point="33,43" end_point="33,81" path_material="asphalt" path_radius="6"/>         <!-- pieces n right -->
@@ -1694,36 +1786,35 @@
         Turbulence
         Voronoi    -->
 
-	<terrain_generators>
+<terrain_generators>
 		<terrain_generator name="vanilla" use_old_final="false">
 			<module name="fastContinents" type="FastNoise">
-				<property name="frequency" value="0.25"/>
+				<property name="frequency" value="0.5"/>
 			</module>
 			<module name="fastLowlands" type="FastBillow" no_seed="true">
-				<property name="frequency" value="0.3"/>
+				<property name="frequency" value="0.1"/>
 			</module>
 			<module name="fastLowlandsScaled" type="ScaleBiasOutput">
 				<property name="sourceModule" value="fastLowlands"/>
 				<property name="scale" value="0.1"/>
 				<property name="bias" value="0.5"/>
 			</module>
-			<module name="fastMountainsBase" type="RidgedMultifractal">
+			<module name="fastMountainsBase" type="FastRidgedMultifractal">
 				<property name="frequency" value="0.0005"/>
 			</module>
 			<module name="fastMountainsScaled" type="ScaleBiasOutput">
 				<property name="sourceModule" value="fastMountainsBase"/>
-				<property name="scale" value="0.25"/>
+				<property name="scale" value="0.1"/>
 				<property name="bias" value="0.5"/>
 			</module>
 			<module name="fastMountains" type="FastTurbulence">
 				<property name="sourceModule" value="fastMountainsScaled"/>
-				<property name="power" value="50"/>
-				<property name="frequency" value="0.5"/>
-				<property name="roughness" value="10"/>
+				<property name="power" value="1"/>
+				<property name="frequency" value="0.3"/>
+				<property name="roughness" value="5"/>
 			</module>
-                        
 			<module name="fastLandFilter" type="FastNoise" seed_additive="1">
-				<property name="frequency" value="0.293"/>
+				<property name="frequency" value="0.0005"/>
 			</module>
 			<module name="fastLand" type="Select">
 				<property name="controlModule" value="fastLandFilter"/>
@@ -1733,13 +1824,12 @@
 				<property name="edgeFalloff" value="16"/>
 			</module>
 			<module name="fastOceanBase" type="FastBillow">
-				<property name="frequency" value=".293"/>
+				<property name="frequency" value="0.2"/>
 			</module>
 			<module name="fastOcean" type="ScaleOutput">
 				<property name="sourceModule" value="fastOceanBase"/>
-				<property name="scale" value="0.2"/>
+				<property name="scale" value="0.1"/>
 			</module>
-                        
 			<module name="fastFinal" type="Select">
 				<property name="controlModule" value="fastContinents"/>
 				<property name="sourceModule1" value="fastOcean"/>
@@ -1747,13 +1837,11 @@
 				<property name="bounds" value="0, 1"/>
 				<property name="edgeFalloff" value="0.5"/>
 			</module>
-                        
 			<module name="scaleBiasOutput" type="ScaleBiasOutput">
 				<property name="sourceModule" value="fastFinal"/>
 				<property name="scale" value="180"/>
 				<property name="bias" value="-1"/>
 			</module>
-                        
 			<module name="clampOutput" type="ClampOutput">
 				<property name="sourceModule" value="scaleBiasOutput"/>
 				<property name="bounds" value="-28,190"/>

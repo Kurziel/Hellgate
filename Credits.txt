@@ -1,6 +1,9 @@
+Credit and thanks to many many people, I've tried very hard to make sure anybody that has influenced the mod or I've taken assests or code from are included here:
 
-
-Specifics:
-
-Sanity Stat Icon:  Brainstorm by Stephen JB Thomas from the Noun Project
-UI unit frame textures: Sirillion (from his SMX UI Mod)
+Magoli for the Prefab Compopack
+Valmar for his countless contributions to the community and his fantastic work, starter kits are of course based off his work.
+Tin for his RWG terrain generation
+Doc Saturn for his banded biome generation
+Brainstorm by Stephen JB Thomas from the Noun Project, used as the sanity icon
+Sirillion for the UI unit frame and UI textures (from his SMX UI Mod)
+Chaosocks for inspiration from his Walking Dead Mod

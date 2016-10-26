@@ -9,15 +9,15 @@
 	</style>
 
 	<style name="SMXItemStack">
-		<style_entry name="select_color" value="[beige]" />
+		<style_entry name="select_color" value="[hellgatered]" />
 		<style_entry name="press_color" value="[limeGreen]" />
 		<style_entry name="final_pressed_color" value="[lightGrey]" />
 		<style_entry name="background_color" value="[mediumGrey]" />
-		<style_entry name="highlight_color" value="[hoverColor]" />
-		<style_entry name="holding_color" value="[white]" />
+		<style_entry name="highlight_color" value="[hellgatered]" />
+		<style_entry name="holding_color" value="[hellgatered]" />
 		<style_entry name="width" value="82" />
 		<style_entry name="height" value="82" />
-		<style_entry name="hover_icon_grow" value="1.5" />
+		<style_entry name="hover_icon_grow" value="1.25" />
 		<style_entry name="on_press" value="true" />
 		<style_entry name="sound_volume" value="0.75" />
 		<style_entry name="pickup_sound" value="[pickup_click]" />
@@ -102,33 +102,30 @@
 		-->
 		
 		<!--NAMED COLORS-->
-		<style_entry name="limeGreen" 		value="222,255,163,255"/>
-		<style_entry name="tan" 					value="182,166,123,255"/>
-		<style_entry name="beige" 				value="222,206,163"/>
-		<style_entry name="borderColor" 	value="0,0,0"/>
-		<style_entry name="darkGrey" 		value="64,64,64"/>
-		<style_entry name="mediumGrey" 	value="96,96,96"/>
-		<style_entry name="lightGrey" 		value="128,128,128"/>
-		<style_entry name="white" 				value="255,255,255"/>
-		<style_entry name="black" 				value="0,0,0"/>
-		<style_entry name="red" 					value="255,0,0"/>
-		<style_entry name="green" 					value="0,255,0"/>
-		<style_entry name="transparent" 	value="0,0,0,0"/>
-		
-		<style_entry name="white_half_alpha" 				value="255,255,255,128"/>
-		<style_entry name="mediumGrey_half_alpha" 	value="96,96,96,128"/>
-		<style_entry name="darkGrey_half_alpha" 		value="64,64,64,128"/>
-		<style_entry name="black_half_alpha" 				value="0,0,0,128"/>
-		
-		<style_entry name="white_quarter_alpha" 			value="255,255,255,192"/>
-		
-		<style_entry name="iconColor" 						value="255,255,255" />
-		<style_entry name="labelColor" 						value="255,255,255" />
-		<style_entry name="selectedColor" 					value="222,206,163" />
-		<style_entry name="hoverColor"						value="250,255,163" />
-		
-		<style_entry name="disabledLabelColor"				value="160,160,160" />
-		
+		<style_entry name="limeGreen"               value="222,255,163,255"/>
+		<style_entry name="tan"                     value="182,166,123,255"/>
+		<style_entry name="beige"                   value="222,206,163"/>
+		<style_entry name="borderColor"             value="0,0,0"/>
+		<style_entry name="darkGrey"                value="64,64,64"/>
+		<style_entry name="mediumGrey"              value="96,96,96"/>
+		<style_entry name="lightGrey"               value="128,128,128"/>
+		<style_entry name="white"                   value="255,255,255"/>
+		<style_entry name="black"                   value="0,0,0"/>
+		<style_entry name="red"                     value="255,0,0"/>
+		<style_entry name="green"                   value="0,255,0"/>
+		<style_entry name="transparent"             value="0,0,0,0"/>
+		<style_entry name="white_half_alpha"        value="255,255,255,128"/>
+		<style_entry name="mediumGrey_half_alpha"   value="96,96,96,128"/>
+		<style_entry name="darkGrey_half_alpha"     value="64,64,64,128"/>
+		<style_entry name="black_half_alpha"        value="0,0,0,128"/>
+		<style_entry name="white_quarter_alpha"     value="255,255,255,192"/>
+		<style_entry name="iconColor"               value="255,255,255" />
+		<style_entry name="labelColor"              value="255,255,255" />
+		<style_entry name="selectedColor"           value="222,206,163" />
+		<style_entry name="hoverColor"              value="250,255,163" />
+		<style_entry name="disabledLabelColor"      value="160,160,160" />
+		<style_entry name="hellgatered"             value="145,0,0"/>
+                
 		<!--NAMED SPRITES-->
 		<style_entry name="default_sprite" value="menu_empty"/>
 		
@@ -239,12 +236,12 @@
 	
 	<!--ITEM STACKS-->
 	<style name="itemStack">
-		<style_entry name="select_color" value="[beige]"/>
+		<style_entry name="select_color" value="[hellgatered]"/>
 		<style_entry name="press_color" value="[limeGreen]"/>
 		<style_entry name="final_pressed_color" value="[lightGrey]"/>
 		<style_entry name="background_color" value="[mediumGrey]"/>
-		<style_entry name="highlight_color" value="[hoverColor]"/>
-		<style_entry name="holding_color" value="[white]"/>
+		<style_entry name="highlight_color" value="[hellgatered]"/>
+		<style_entry name="holding_color" value="[hellgatered]"/>
 		<style_entry name="width" value="72"/>
 		<style_entry name="height" value="72"/>
 		<style_entry name="hover_icon_grow" value="1.5"/>

@@ -1,4 +1,4 @@
-<!-- Groups: firearms, weapons, tools, clothing, scavenging, health, crafting !-->
+ <!-- Groups: firearms, weapons, tools, clothing, scavenging, health, crafting !-->
 
 <progression>
 <player 
@@ -869,12 +869,12 @@
 		<requirement perk_level="4" required_player_level="30" />
 		<requirement perk_level="5" required_player_level="40" />
 		<effect name="HungerDegradation">
-			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="0.9"/>
-			<multiply perk_level="2" value="0.8"/>
-			<multiply perk_level="3" value="0.7"/>
-			<multiply perk_level="4" value="0.6"/>
-			<multiply perk_level="5" value="0.5"/>
+			<multiply perk_level="0" value=".6"/>
+			<multiply perk_level="1" value="0.5"/>
+			<multiply perk_level="2" value="0.4"/>
+			<multiply perk_level="3" value="0.3"/>
+			<multiply perk_level="4" value="0.2"/>
+			<multiply perk_level="5" value="0.1"/>
 		</effect>
 		<effect name="WellnessGain">
 			<multiply perk_level="0" value="1"/>
@@ -907,12 +907,12 @@
 		<requirement perk_level="4" required_player_level="30" />
 		<requirement perk_level="5" required_player_level="40" />
 		<effect name="ThirstDegradation">
-			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="0.9"/>
-			<multiply perk_level="2" value="0.8"/>
-			<multiply perk_level="3" value="0.7"/>
-			<multiply perk_level="4" value="0.6"/>
-			<multiply perk_level="5" value="0.5"/>
+			<multiply perk_level="0" value=".5"/>
+			<multiply perk_level="1" value="0.45"/>
+			<multiply perk_level="2" value="0.4"/>
+			<multiply perk_level="3" value="0.35"/>
+			<multiply perk_level="4" value="0.3"/>
+			<multiply perk_level="5" value="0.25"/>
 		</effect>
 	</perk>
 	<perk name="Quicker Crafting" icon="forge" description_key="quickerCraftingDesc" title_key="quickerCrafting" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="10" group="crafting">

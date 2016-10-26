@@ -181,7 +181,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 <buff id="Drunk" mutex="Hangover,SickDrunk,AlcoholPoisoning,stunned" buffif="beers greater 5" debuffif="beers less 2" actions="debuff(Buzzed)" causes="beer,grainAlcohol"
 	type="staminadown" icon="ui_game_symbol_drunk" name_key="drunk" description_key="drunkDesc" tooltip_key="drunkTooltip">
 	<modify id="0" stat="stamina" amount="5" rate="1"/>
-	<modify id="0" stat="speedmodifier" setValue="0.90"/>
+	<modify id="1" stat="speedmodifier" setValue="0.90"/>
 </buff>
 
 <buff id="InstantSickDrunk" mutex="SickDrunk,AlcoholPoisoning" requires="Hangover" duration="1" buffif="beers greater 0" actions="setvar(beers, 9)"
@@ -190,7 +190,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 <buff id="SickDrunk" mutex="AlcoholPoisoning" buffif="beers greater 8" debuffif="beers less 1" ondebuff="Hangover" actions="increment(@wellness, -0.5, 100t, 0, 0);debuff(Drunk);debuff(Hangover)"
 	type="staminadown" icon="ui_game_symbol_dysentery" name_key="sickDrunk" description_key="sickDrunkDesc" tooltip_key="sickDrunkTooltip">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
-	<modify id="0" stat="speedmodifier" setValue="0.70"/>
+	<modify id="1" stat="speedmodifier" setValue="0.70"/>
 </buff>
 
 <buff id="Hangover" mutex="AlcoholPoisoning" duration="1500" type="staminadown" 
@@ -201,7 +201,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 <buff id="AlcoholPoisoning" buffif="beers greater 14" debuffif="beers less 9" ondebuff="SickDrunk" actions="increment(@wellness, -1, 100t, 0, 0);debuff(SickDrunk);debuff(Hangover)" 
 	type="bleeding" icon="ui_game_symbol_food_poisoning" name_key="alcoholPoisoning" description_key="alcoholPoisoningDesc" tooltip_key="alcoholPoisoningTooltip">
 	<modify id="0" stat="stamina" amount="-5" rate="1"/>
-	<modify id="0" stat="speedmodifier" setValue="0.40"/>
+	<modify id="1" stat="speedmodifier" setValue="0.40"/>
 </buff>
 
 <!-- todo ideally this buff is only applied on a critical hit to the heart region and not applied to zombies. Armor would limit this too -->
@@ -343,16 +343,31 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="0" stat="wellness" amount="5" rate="1"/>
 </buff>	
 
-<buff id="hungry" mutex="hungry2" buffif="+starve > 1" debuffif="+full > 1" actions="increment(@wellness, -0.5, 150, 0, 0)" notificationClass="FoodBuffNotification" icon="ui_game_symbol_hunger" name_key="hungry" description_key="hungryDesc" tooltip_key="hungryTooltip" cures="shamSandwich,corn,canBeef,grilledMeat,baconAndEggs"/>
-<buff id="hungry2" buffif="+starve > 1200" debuffif="+full > 1" actions="increment(@wellness, -0.5, 30, 0, 0);debuff(hungry);damage(0,7,0,0)" notificationClass="FoodBuffNotification" icon="ui_game_symbol_hunger" name_key="hungry2" description_key="hungry2Desc" tooltip_key="hungry2Tooltip" cures="shamSandwich,corn,canBeef,grilledMeat,baconAndEggs">
-	<modify id="0" stat="stamina" amount="-3" rate="1"/>
-	<modify id="1" stat="health" amount="-1" rate="1"/>
+<buff id="hungry" mutex="hungry2" buffif="+starve > 1" debuffif="+full > 1" actions="increment(@wellness, -0.5, 150, 0, 0)" notificationClass="FoodBuffNotification" icon="ui_game_symbol_hunger" name_key="hungry" description_key="hungryDesc" tooltip_key="hungryTooltip">
+        <modify id="0" stat="speedmodifier" mulValue="0.8"/>
+        <modify id="1" stat="stamina" amount="-1" rate="45"/>   
+        <modify id="2" stat="health" amount="-1" rate="144"/>
+        <modify id="3" stat="wellness" amount="-1" rate="144"/>       
 </buff>
 
-<buff id="thirsty" mutex="thirsty2" buffif="+thirst > 1" debuffif="+hydrated > 5" actions="increment(@wellness, -0.1, 30, 0, 0)" notificationClass="WaterBuffNotification" icon="ui_game_symbol_thirst" name_key="thirsty" description_key="thirstyDesc" tooltip_key="thirstyTooltip" cures="canMurkyWater,canBoiledWater,bottledWater,goldenRodTea,redTea"/>
-<buff id="thirsty2" notificationClass="WaterBuffNotification" buffif="+thirst > 600" debuffif="+hydrated > 5" actions="increment(@wellness, -0.5, 15, 0, 0);debuff(thirsty);damage(0,7,0,0)" icon="ui_game_symbol_thirst" name_key="thirsty2" description_key="thirsty2Desc" tooltip_key="thirsty2Tooltip" cures="canMurkyWater,canBoiledWater,bottledWater,goldenRodTea,redTea">
-	<modify id="0" stat="stamina" amount="-3" rate="1"/>
-	<modify id="1" stat="health" amount="-1" rate="1"/>
+<buff id="hungry2" buffif="+starve > 14400" debuffif="+full > 1" actions="increment(@wellness, -0.5, 30, 0, 0);debuff(hungry);damage(0,7,0,0)" notificationClass="FoodBuffNotification" icon="ui_game_symbol_hunger" name_key="hungry2" description_key="hungry2Desc" tooltip_key="hungry2Tooltip" cures="shamSandwich,corn,canBeef,grilledMeat,baconAndEggs">
+	<modify id="0" stat="speedmodifier" mulValue="0.6"/>
+        <modify id="1" stat="stamina" amount="-1" rate="15"/>
+	<modify id="2" stat="health" amount="-1" rate="72"/>
+        <modify id="3" stat="wellness" amount="-1" rate="72"/>
+</buff>
+
+<buff id="thirsty" mutex="thirsty2" buffif="+thirst > 1" debuffif="+hydrated > 5" notificationClass="WaterBuffNotification" icon="ui_game_symbol_thirst" name_key="thirsty" description_key="thirstyDesc" tooltip_key="thirstyTooltip">
+        <modify id="1" stat="stamina" amount="-1" rate="30"/>   
+        <modify id="2" stat="health" amount="-1" rate="72"/>
+        <modify id="3" stat="wellness" amount="-1" rate="72"/>
+</buff>
+
+<buff id="thirsty2" notificationClass="WaterBuffNotification" buffif="+thirst > 10800" debuffif="+hydrated > 5" icon="ui_game_symbol_thirst" name_key="thirsty2" description_key="thirsty2Desc" tooltip_key="thirsty2Tooltip">
+	<modify id="1" stat="stamina" amount="-1" rate="10"/>   
+        <modify id="2" stat="health" amount="-1" rate="31"/>
+        <modify id="3" stat="wellness" amount="-1" rate="31"/>
+        <modify id="0" stat="speedmodifier" mulValue="0.9"/>
 </buff>
 
 <buff id="cannotBreath" mutex="drowning" duration="20" stack="discard" actions="debuff(freshAir)" onexpired="drowning" notificationClass="UnderwaterBuffNotification" icon="ui_game_symbol_oxygen" name_key="cannotBreathe" description_key="cannotBreatheDesc" tooltip_key="cannotBreatheTooltip"/>

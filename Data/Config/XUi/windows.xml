@@ -46,23 +46,21 @@
 			<rect width="168" height="43" controller="HUDStatBar" stat_type="VehicleBattery" visible="{statvisible}">
 				<sprite depth="3" pos="3,0"  name="BarContent" sprite="{statimage|once}" height="43" width="162" />
 				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="130,-6" foregroundlayer="true" />
-				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" text="{statcurrentwithmax}" height="30" />
+				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" text="{statcurrentwithmax}" height="30"/>
 			</rect>
-
 			<rect width="168" height="43" controller="HUDStatBar" stat_type="VehicleFuel" visible="{statvisible}">
-				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
+				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
 				<sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{StatImage|once}" type="filled" height="37" width="162" flip="Horizontally" fill="{StatFill}" />
+				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" flip="Horizontally" />
 				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="130,-6" foregroundlayer="true" />
-				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" text="{statcurrentwithmax}" height="30" />
+				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" text="{statcurrentwithmax}" height="30"/>
 			</rect>
-
 			<rect width="168" height="43" controller="HUDStatBar" stat_type="VehicleHealth" visible="{statvisible}">
-				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
+				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
 				<sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{StatImage|once}" type="filled" height="37" width="162" flip="Horizontally" fill="{StatFill}" />
+				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" flip="Horizontally" />
 				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="130,-6" foregroundlayer="true" />
-				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" text="{statcurrentwithmax}" height="30" />
+				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" text="{statcurrentwithmax}" height="30"/>
 			</rect>
 		</grid>
 
@@ -568,21 +566,21 @@
 				<texture name="SMXHealthBarBG" depth="1" size="240,54" texture="@file:Mods\Hellgate\Textures\UnitFrames\healthbarempty.png" material="Materials/Transparent Colored" pos="0,-55" />
 				<sprite name="BarContent" depth="2" height="25" width="220" atlas="itemiconatlas" sprite="smxuf1health" type="filled" fill="0" pos="8,-65" />
                                 <sprite depth="4" name="Icon" pos="8,-68" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="20,20" foregroundlayer="true" />
-				<label depth="6" name="TextContent" pos="0,-62" font_size="32" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
+				<label depth="6" name="TextContent" pos="0,-66" font_size="24" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
 			</rect>
 
 			<rect width="240" height="35" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
 				<texture name="SMXStaminaBarBG" depth="1" size="240,54" texture="@file:Mods\Hellgate\Textures\UnitFrames\staminabarempty.png" material="Materials/Transparent Colored" pos="0,-55" />
 				<sprite name="BarContent" depth="2" size="220,25" atlas="itemiconatlas" sprite="smxuf1stamina" type="filled" fill="0" pos="8,-67" />
                                 <sprite depth="4" name="Icon" pos="8,-70" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="20,20" foregroundlayer="true"/>
-				<label depth="6" name="TextContent" pos="0,-64" font_size="32" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
+				<label depth="6" name="TextContent" pos="0,-67" font_size="24" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
 			</rect>
                         
                         <rect width="240" height="35" controller="PlayerStatsWindow" >
 				<texture name="SanityBarBG" depth="1" size="240,54" texture="@file:Mods\Hellgate\Textures\UnitFrames\sanitybarempty.png" material="Materials/Transparent Colored" pos="-3,-55" />
 				<sprite name="BarContent" depth="2" size="220,25" atlas="ItemIconAtlas" sprite="hguf1sanity" type="filled" fill="{playerwellnessfill}" pos="8,-65" />
                                 <sprite depth="4" name="Icon" pos="8,-68" atlas="ItemIconAtlas" sprite="ui_sanity4" size="20,20" foregroundlayer="true" /> <!-- sprite="@file:Mods\Hellgate\ItemIcons\ui_sanity.png" -->
-				<label depth="6" name="TextContent" pos="0,-62" font_size="28" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerwellness}" />
+				<label depth="6" name="TextContent" pos="0,-66" font_size="24" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerwellness}" />
 			</rect>
                         
 		</grid>
